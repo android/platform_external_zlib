@@ -24,7 +24,6 @@ zlib_files := \
 
 LOCAL_MODULE := libz
 LOCAL_CFLAGS += -O3 -DUSE_MMAP
-LOCAL_CFLAGS += -fvisibility=hidden
 LOCAL_SRC_FILES := $(zlib_files)
 include $(BUILD_SHARED_LIBRARY)
 
@@ -33,7 +32,6 @@ include $(CLEAR_VARS)
 LOCAL_ARM_MODE := arm
 LOCAL_MODULE := libz
 LOCAL_CFLAGS += -O3 -DUSE_MMAP
-LOCAL_CFLAGS += -fvisibility=hidden
 LOCAL_SRC_FILES := $(zlib_files)
 include $(BUILD_STATIC_LIBRARY)
 
@@ -42,7 +40,6 @@ include $(CLEAR_VARS)
 LOCAL_ARM_MODE := arm
 LOCAL_MODULE := libz
 LOCAL_CFLAGS += -O3 -DUSE_MMAP
-LOCAL_CFLAGS += -fvisibility=hidden
 LOCAL_SRC_FILES := $(zlib_files)
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -58,14 +55,12 @@ unzip_files := \
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(unzip_files)
-LOCAL_CFLAGS += -fvisibility=hidden
 LOCAL_MODULE:= libunz
 LOCAL_ARM_MODE := arm
 include $(BUILD_HOST_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(unzip_files)
-LOCAL_CFLAGS += -fvisibility=hidden
 LOCAL_MODULE:= libunz
 LOCAL_ARM_MODE := arm
 include $(BUILD_STATIC_LIBRARY)
