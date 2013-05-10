@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "UaSiVUzg",
+        "filename": "src/gzlib.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2013-05-10T17:36:07Z",
+      "side": 1,
+      "message": "yeah, they called this out in the changelog.",
+      "parentUuid": "Uae2KjdA",
+      "revId": "04351a92ecc8429c999acbfc5dfe5aa8bee1d19d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "UaQ2IodY",
         "filename": "src/gzwrite.c",
         "patchSetId": 1
