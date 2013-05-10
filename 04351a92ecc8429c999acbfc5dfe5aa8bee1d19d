@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "Uae2KjdA",
+        "filename": "src/gzlib.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1003723
+      },
+      "writtenOn": "2013-05-10T06:17:38Z",
+      "side": 1,
+      "message": "oops?",
+      "revId": "04351a92ecc8429c999acbfc5dfe5aa8bee1d19d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "UaQ2IodY",
+        "filename": "src/gzwrite.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 564,
+      "author": {
+        "id": 1003723
+      },
+      "writtenOn": "2013-05-10T06:17:38Z",
+      "side": 1,
+      "message": "interesting transposition",
+      "revId": "04351a92ecc8429c999acbfc5dfe5aa8bee1d19d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
