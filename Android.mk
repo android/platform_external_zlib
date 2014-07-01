@@ -94,6 +94,11 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES:=        \
 	src/test/minigzip.c
 
+ifeq (true,$(TARGET_PREFER_32_BIT_EXECUTABLES))
+# We are doing a 32p build, force recovery to be 64bit
+LOCAL_MULTILIB := 64
+endif
+
 LOCAL_MODULE:= gzip
 
 LOCAL_SHARED_LIBRARIES := libz
