@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a4a77122_1f8313b6",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-07-02T16:32:46Z",
+      "side": 1,
+      "message": "I am not sure if the use case is valid to make this change, but  it\u0027s simpler to obtain the same effect:\nLOCAL_MULTILIB :\u003d first",
+      "revId": "22f7908f071101bdea8943957711a3d4acc41fdf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
