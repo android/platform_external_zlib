@@ -368,7 +368,19 @@
 typedef unsigned char  Byte;  /* 8 bits */
 #endif
 typedef unsigned int   uInt;  /* 16 bits or more */
-typedef unsigned long  uLong; /* 32 bits or more */
+
+// BEGIN Android-Changed
+//
+// Use 64 bit values on both 32 and 64 bit platforms so that
+// stream statistics (stream.total_in) and (stream.total_out)
+// are correct.
+//
+#ifdef __LP64__
+typedef unsigned long uLong;  /* 32 bits or more */
+#else
+typedef unsigned long long uLong; /* 32 bits or more */
+#endif
+// END Android-Changed
 
 #ifdef SMALL_MEDIUM
    /* Borland C/C++ and some old MSC versions ignore FAR inside typedef */
