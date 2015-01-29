@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "f79dab26_410396eb",
+        "filename": "src/crc32.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 1038039
+      },
+      "writtenOn": "2015-01-29T15:24:40Z",
+      "side": 1,
+      "message": "\u003cDocumenting for posterity\u003e This change here is required because of a mistake in the upstream source. It should always have been uLong but happened to work when uLong was compatible with unsigned long. This fix is required when uLong is no longer unsigned long, but is not the goal of this change.",
+      "range": {
+        "startLine": 204,
+        "startChar": 0,
+        "endLine": 204,
+        "endChar": 5
+      },
+      "revId": "fa6fa87aea679eb11e1e8a4cb951508dd01894d1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f79dab26_a185ba1d",
         "filename": "src/zconf.h",
         "patchSetId": 1
@@ -37,6 +60,30 @@
       "side": 1,
       "message": "no, these comments document the code requirements. (i.e, these types should be 32 bits wide or higher)",
       "parentUuid": "f79dab26_a185ba1d",
+      "range": {
+        "startLine": 379,
+        "startChar": 33,
+        "endLine": 379,
+        "endChar": 35
+      },
+      "revId": "fa6fa87aea679eb11e1e8a4cb951508dd01894d1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "578037c4_5c637502",
+        "filename": "src/zconf.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 379,
+      "author": {
+        "id": 1038039
+      },
+      "writtenOn": "2015-01-29T15:24:40Z",
+      "side": 1,
+      "message": "\u003cBased on discussion. Documenting for posterity and other reviewers\u003e\n\nThis comment here just documents that the zlib code would be happy if this were any type _providing_ it is \u003e\u003d 32 bits.\n\nHowever, in this change for Android we\u0027re forcing it to 64-bit even on 32-bit platforms because we want z_stream_s-\u003etotal_in and z_stream_s-\u003etotal_out to be reliable on all Android platforms for streams that are beyond 4GB in size.\n\nModifying all occurrences of uLong to be 64-bit on 32-bit devices is a less invasive change than the alternatives.\n\nAlternatives would be to modify the struct to not use uLong for stream lengths, or to keep our own 64-bit count by consulting z_stream_s-\u003etotal_in / total_out.\n\nNarayan points out in the commit comment the docs where the zlib developers warn about the risk of overflow.",
+      "parentUuid": "578037c4_bc0f2954",
       "range": {
         "startLine": 379,
         "startChar": 33,
