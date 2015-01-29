@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f79dab26_a185ba1d",
+        "filename": "src/zconf.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 379,
+      "author": {
+        "id": 1038039
+      },
+      "writtenOn": "2015-01-29T14:46:47Z",
+      "side": 1,
+      "message": "Isn\u0027t this comment and the one below out of date?",
+      "range": {
+        "startLine": 379,
+        "startChar": 33,
+        "endLine": 379,
+        "endChar": 35
+      },
+      "revId": "fa6fa87aea679eb11e1e8a4cb951508dd01894d1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
