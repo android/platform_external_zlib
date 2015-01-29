@@ -22,6 +22,30 @@
       "revId": "fa6fa87aea679eb11e1e8a4cb951508dd01894d1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "578037c4_bc0f2954",
+        "filename": "src/zconf.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 379,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-01-29T14:58:01Z",
+      "side": 1,
+      "message": "no, these comments document the code requirements. (i.e, these types should be 32 bits wide or higher)",
+      "parentUuid": "f79dab26_a185ba1d",
+      "range": {
+        "startLine": 379,
+        "startChar": 33,
+        "endLine": 379,
+        "endChar": 35
+      },
+      "revId": "fa6fa87aea679eb11e1e8a4cb951508dd01894d1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
