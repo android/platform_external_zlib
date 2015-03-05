@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "971f1854_156f34ad",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2015-03-05T06:01:09Z",
+      "side": 1,
+      "message": "Really? libz is only built with the NDK for ARM? That\u0027s weird...",
+      "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f73f74b3_50c38c86",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2015-03-05T06:01:09Z",
+      "side": 1,
+      "message": "Style nit: none of the other modules have extra spaces.",
+      "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
