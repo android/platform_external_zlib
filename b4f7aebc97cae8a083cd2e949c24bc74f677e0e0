@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "17c4087c_996e5bae",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2015-03-07T02:31:57Z",
+      "side": 1,
+      "message": "remove everything above this line?\n\ndo we have a benchmark we can use to see if this is true? i suspect this comment is old enough they really do mean thumb rather than thumb2, and i wonder whether it\u0027s actually true any more. (given thumb2, for example.)",
+      "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "971f1854_156f34ad",
         "filename": "Blueprints",
         "patchSetId": 1
@@ -13,6 +30,23 @@
       "writtenOn": "2015-03-05T06:01:09Z",
       "side": 1,
       "message": "Really? libz is only built with the NDK for ARM? That\u0027s weird...",
+      "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "37c10c6d_da204558",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2015-03-07T02:31:57Z",
+      "side": 1,
+      "message": "that seems quite important.",
       "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
