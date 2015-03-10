@@ -26,8 +26,11 @@ LOCAL_MODULE := libz
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -O3 -DUSE_MMAP
 
+ifneq ($(TARGET_ARCH),$(filter $(TARGET_ARCH),mips mips64))
 # TODO: This is to work around b/19059885. Remove after root cause is fixed
+# MIPS doesn't support GNU hash style.
 LOCAL_LDFLAGS := -Wl,--hash-style=both
+endif
 
 LOCAL_SRC_FILES := $(zlib_files)
 ifneq ($(TARGET_BUILD_APPS),)
