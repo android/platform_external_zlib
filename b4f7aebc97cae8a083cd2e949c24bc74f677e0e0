@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7c7fe921_ec448b78",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2015-03-10T21:04:06Z",
+      "side": 1,
+      "message": "I\u0027d rather leave it until it is removed from Android.mk",
+      "parentUuid": "17c4087c_996e5bae",
+      "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "971f1854_156f34ad",
         "filename": "Blueprints",
         "patchSetId": 1
@@ -53,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "7c7fe921_6c517b30",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2015-03-10T21:04:06Z",
+      "side": 1,
+      "message": "It will come later",
+      "parentUuid": "37c10c6d_da204558",
+      "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f73f74b3_50c38c86",
         "filename": "Blueprints",
         "patchSetId": 1
@@ -64,6 +100,24 @@
       "writtenOn": "2015-03-05T06:01:09Z",
       "side": 1,
       "message": "Style nit: none of the other modules have extra spaces.",
+      "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc8bd96d_503e8c90",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2015-03-10T21:04:06Z",
+      "side": 1,
+      "message": "Left over from the auto translator, I\u0027ll fix it in a later cleanup",
+      "parentUuid": "f73f74b3_50c38c86",
       "revId": "b4f7aebc97cae8a083cd2e949c24bc74f677e0e0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
