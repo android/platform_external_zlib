@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "068cdc85_9cf3a2eb",
+        "filename": "Blueprints",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2015-03-20T17:41:12Z",
+      "side": 1,
+      "message": "whole_static_libs, otherwise I think it will produce an empty library because nothing references the symbols in the .a file.",
+      "range": {
+        "startLine": 51,
+        "startChar": 4,
+        "endLine": 51,
+        "endChar": 15
+      },
+      "revId": "dbcc6e2474ed4f224b1979c0ae8808ee3d486a3d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
