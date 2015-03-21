@@ -1,0 +1,7 @@
+Code-Review+2: Colin Cross <ccross@google.com>
+Verified+1: Tim Kilbourn <tkilbourn@google.com>
+Submitted-by: Tim Kilbourn <tkilbourn@google.com>
+Submitted-at: Sat, 21 Mar 2015 00:03:15 +0000
+Reviewed-on: https://android-review.googlesource.com/143180
+Project: platform/external/zlib
+Branch: refs/heads/master-soong
