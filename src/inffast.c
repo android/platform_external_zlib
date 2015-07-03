@@ -267,12 +267,12 @@ unsigned start;         /* inflate()'s starting value for strm->avail_out */
                 }
                 else {
                     from = out - dist;          /* copy direct from output */
-                    do {                        /* minimum length is three */
+                    while (len > 2) {
                         PUP(out) = PUP(from);
                         PUP(out) = PUP(from);
                         PUP(out) = PUP(from);
                         len -= 3;
-                    } while (len > 2);
+                    }
                     if (len) {
                         PUP(out) = PUP(from);
                         if (len > 1)
