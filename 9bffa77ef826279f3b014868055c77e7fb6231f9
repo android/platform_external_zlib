@@ -1,0 +1,7 @@
+Code-Review+2: Dan Albert <danalbert@google.com>
+Verified+1: Colin Cross <ccross@android.com>
+Submitted-by: Colin Cross <ccross@android.com>
+Submitted-at: Mon, 30 Nov 2015 19:10:34 +0000
+Reviewed-on: https://android-review.googlesource.com/184325
+Project: platform/external/zlib
+Branch: refs/heads/master
