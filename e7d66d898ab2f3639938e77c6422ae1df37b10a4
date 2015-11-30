@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9b0923b2_8ba951b9",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2015-11-30T22:35:54Z",
+      "side": 1,
+      "message": "NDK",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 35,
+        "endChar": 11
+      },
+      "revId": "e7d66d898ab2f3639938e77c6422ae1df37b10a4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fbde9f59_b1c6b81b",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2015-11-30T22:35:54Z",
+      "side": 1,
+      "message": "NDK",
+      "range": {
+        "startLine": 51,
+        "startChar": 8,
+        "endLine": 51,
+        "endChar": 11
+      },
+      "revId": "e7d66d898ab2f3639938e77c6422ae1df37b10a4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
