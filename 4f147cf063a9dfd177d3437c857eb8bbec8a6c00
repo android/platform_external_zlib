@@ -1,0 +1,7 @@
+Code-Review+2: Christopher Ferris <cferris@google.com>
+Verified+1: Elliott Hughes <enh@google.com>
+Submitted-by: Elliott Hughes <enh@google.com>
+Submitted-at: Tue, 19 Jan 2016 18:11:46 +0000
+Reviewed-on: https://android-review.googlesource.com/196786
+Project: platform/external/zlib
+Branch: refs/heads/master
