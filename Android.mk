@@ -101,3 +101,15 @@ LOCAL_STATIC_LIBRARIES := libz
 LOCAL_CXX_STL := none
 
 include $(BUILD_HOST_EXECUTABLE)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := zlib_fingerprint
+LOCAL_MODULE_CLASS := ETC
+my_gen := $(call local-intermediates-dir)/gen/zlib_fingerprint
+$(my_gen) : PRIVATE_CUSTOM_TOOL = \
+	cat $^ | sha256sum | cut -c -64 | xxd -r -p > $@
+$(my_gen) : $(wildcard $(LOCAL_PATH)/src/*.c) $(wildcard $(LOCAL_PATH)/src/*.h)
+	$(transform-generated-source)
+LOCAL_PREBUILT_MODULE_FILE := $(my_gen)
+include $(BUILD_PREBUILT)
