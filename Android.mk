@@ -101,3 +101,9 @@ LOCAL_STATIC_LIBRARIES := libz
 LOCAL_CXX_STL := none
 
 include $(BUILD_HOST_EXECUTABLE)
+
+include $(CLEAR_VARS)
+
+$(TARGET_OUT_COMMON_GEN)/zlib_fingerprint : $(wildcard $(LOCAL_PATH)/src/*.[ch])
+	printf '%s\n' $^ | LC_ALL=C sort | xargs cat | shasum -a 256 | \
+		awk '{printf $$1}' > $@
