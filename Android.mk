@@ -101,3 +101,12 @@ LOCAL_STATIC_LIBRARIES := libz
 LOCAL_CXX_STL := none
 
 include $(BUILD_HOST_EXECUTABLE)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := zlib_fingerprint
+LOCAL_MODULE_CLASS := ETC
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE) : $(wildcard $(LOCAL_PATH)/src/*.[ch])
+	printf '%s\n' $^ | LC_ALL=C sort | xargs cat | shasum -a 256 | \
+		awk '{printf $$1}' > $@
