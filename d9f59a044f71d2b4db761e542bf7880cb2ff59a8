@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "82ea9d1e_48249a47",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1079733
+      },
+      "writtenOn": "2016-03-04T19:17:02Z",
+      "side": 1,
+      "message": "I was thinking binary is more robust, a text file might have a trailing \\n and in update_engine the char* will have a trailing \\0, and we need to handle these cases. (Basically I hate dealing with text files)",
+      "parentUuid": "a26ec178_85201ee7",
+      "range": {
+        "startLine": 112,
+        "startChar": 20,
+        "endLine": 112,
+        "endChar": 31
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c26bb568_8f2a7914",
         "filename": "Android.mk",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-04T08:37:53Z",
       "side": 1,
       "message": "Could you make this file host only so we don\u0027t install it? (you can include it in META/ in the target_files.zip)",
+      "range": {
+        "startLine": 116,
+        "startChar": 10,
+        "endLine": 116,
+        "endChar": 24
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "22ef3134_8a0b33bb",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1079733
+      },
+      "writtenOn": "2016-03-04T19:17:02Z",
+      "side": 1,
+      "message": "The problem is we need to run unit test in the target, so we need to install it.",
+      "parentUuid": "c26bb568_8f2a7914",
       "range": {
         "startLine": 116,
         "startChar": 10,
