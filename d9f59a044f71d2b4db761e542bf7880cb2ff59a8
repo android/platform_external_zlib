@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a26ec178_85201ee7",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1077068
+      },
+      "writtenOn": "2016-03-04T08:37:53Z",
+      "side": 1,
+      "message": "Why convert it to binary form? a hex sha256 sounds easier to read for a dev.",
+      "range": {
+        "startLine": 112,
+        "startChar": 20,
+        "endLine": 112,
+        "endChar": 31
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c26bb568_8f2a7914",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1077068
+      },
+      "writtenOn": "2016-03-04T08:37:53Z",
+      "side": 1,
+      "message": "Could you make this file host only so we don\u0027t install it? (you can include it in META/ in the target_files.zip)",
+      "range": {
+        "startLine": 116,
+        "startChar": 10,
+        "endLine": 116,
+        "endChar": 24
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
