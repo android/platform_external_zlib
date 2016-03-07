@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "17aa7153_25d54eb7",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1079733
+      },
+      "writtenOn": "2016-03-07T22:25:24Z",
+      "side": 1,
+      "message": "Ok, will do.",
+      "parentUuid": "773acdf7_00fb2666",
+      "range": {
+        "startLine": 112,
+        "startChar": 20,
+        "endLine": 112,
+        "endChar": 31
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "77dc8dfd_50684c88",
         "filename": "Android.mk",
         "patchSetId": 2
@@ -84,6 +108,30 @@
       "writtenOn": "2016-03-07T21:31:40Z",
       "side": 1,
       "message": "Couldn\u0027t we fingerprint the compressor code only?",
+      "range": {
+        "startLine": 113,
+        "startChar": 41,
+        "endLine": 113,
+        "endChar": 47
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "773acdf7_80ef3667",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1079733
+      },
+      "writtenOn": "2016-03-07T22:25:24Z",
+      "side": 1,
+      "message": "Yes, we can, I think the deflate code only involves deflate.c deflate.h trees.c trees.h and maybe also zconf.h zutil.c zutil.h which contains some constants might used during compression, but I\u0027m not entirely sure about this, because deflate.h includes zutil.h and zutil.h includes zlib.h which basically has the entire zlib api in it. Without carefully inspection, I can\u0027t be sure they won\u0027t have influence on the compression result.\nAnd this will also adds more work if later on something changes and we need to evaluate if the list is up to date. For example, zlib-ng has deflate_fast.c deflate_medium.c deflate_p.h deflate_slow.c match.c match.h, etc.\nGiven the history of this repo, times of changes in *.[ch] vs compressor code is like 4 vs 3, I think is easier to just use *.[ch]",
+      "parentUuid": "77dc8dfd_50684c88",
       "range": {
         "startLine": 113,
         "startChar": 41,
@@ -131,6 +179,30 @@
       "side": 1,
       "message": "The problem is we need to run unit test in the target, so we need to install it.",
       "parentUuid": "c26bb568_8f2a7914",
+      "range": {
+        "startLine": 116,
+        "startChar": 10,
+        "endLine": 116,
+        "endChar": 24
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "77dc8dfd_73e23ac1",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1079733
+      },
+      "writtenOn": "2016-03-07T22:25:24Z",
+      "side": 1,
+      "message": "Maybe we need a host module which will be in update_engine LOCAL_REQUIRED_MODULES and a target module which will be in update_engine_unittests LOCAL_REQUIRED_MODULES?\nBut update_engine is a target module and it can\u0027t depend on a host module, right?",
+      "parentUuid": "22ef3134_8a0b33bb",
       "range": {
         "startLine": 116,
         "startChar": 10,
