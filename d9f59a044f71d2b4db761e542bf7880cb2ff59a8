@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "773acdf7_00fb2666",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1077068
+      },
+      "writtenOn": "2016-03-07T21:30:21Z",
+      "side": 1,
+      "message": "The \\0 is not a problem. \u0027\\n\u0027 is easily trimmed out.",
+      "parentUuid": "82ea9d1e_48249a47",
+      "range": {
+        "startLine": 112,
+        "startChar": 20,
+        "endLine": 112,
+        "endChar": 31
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c26bb568_8f2a7914",
         "filename": "Android.mk",
         "patchSetId": 2
