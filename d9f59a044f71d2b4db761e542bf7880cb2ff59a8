@@ -73,6 +73,29 @@
     },
     {
       "key": {
+        "uuid": "77dc8dfd_50684c88",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1077068
+      },
+      "writtenOn": "2016-03-07T21:31:40Z",
+      "side": 1,
+      "message": "Couldn\u0027t we fingerprint the compressor code only?",
+      "range": {
+        "startLine": 113,
+        "startChar": 41,
+        "endLine": 113,
+        "endChar": 47
+      },
+      "revId": "d9f59a044f71d2b4db761e542bf7880cb2ff59a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c26bb568_8f2a7914",
         "filename": "Android.mk",
         "patchSetId": 2
