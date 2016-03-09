@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "570ce9bf_416e96d0",
+        "filename": "Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1056365
+      },
+      "writtenOn": "2016-03-09T18:17:42Z",
+      "side": 1,
+      "message": "this will go to the top level folder at host out gen. feels like we should have it under some intermediate folder instead.\n\nwangying@: can you help with the rule here?",
+      "range": {
+        "startLine": 108,
+        "startChar": 22,
+        "endLine": 108,
+        "endChar": 25
+      },
+      "revId": "0705f6f0fa5db2b18215216a0a29c22e1bad4822",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
