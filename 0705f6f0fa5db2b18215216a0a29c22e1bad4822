@@ -118,6 +118,30 @@
       "revId": "0705f6f0fa5db2b18215216a0a29c22e1bad4822",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "570ce9bf_82124273",
+        "filename": "Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2016-03-10T20:01:52Z",
+      "side": 1,
+      "message": "That does not work - you can\u0027t have a target module  depend on a host module with LOCAL_REQUIRED_MODULES.\nProbably better not make it a module, use direct path instead, something like:\n$(TARGET_OUT_COMMON_GEN)/zlib_fingerprint : $(wildcard $(LOCAL_PATH)/src/*.[ch])\n  \u003cbuild recipe\u003e\nthen use the path in build/core/Makefile to establish the dependency and add it to the target_files.zip.",
+      "parentUuid": "570ce9bf_dc8fffa8",
+      "range": {
+        "startLine": 108,
+        "startChar": 22,
+        "endLine": 108,
+        "endChar": 25
+      },
+      "revId": "0705f6f0fa5db2b18215216a0a29c22e1bad4822",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
