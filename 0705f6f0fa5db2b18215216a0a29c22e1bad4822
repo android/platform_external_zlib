@@ -22,6 +22,30 @@
       "revId": "0705f6f0fa5db2b18215216a0a29c22e1bad4822",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "570ce9bf_39b06d25",
+        "filename": "Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2016-03-10T17:55:27Z",
+      "side": 1,
+      "message": "GEN isn\u0027t really a module class. The build system doesn\u0027t guarantee this will work in the future.\nI would use ETC in this case.\nI don\u0027t know how the output will be used. It looks to me it doesn\u0027t need to be a module, because it\u0027s not referenced anywhere else.",
+      "parentUuid": "570ce9bf_416e96d0",
+      "range": {
+        "startLine": 108,
+        "startChar": 22,
+        "endLine": 108,
+        "endChar": 25
+      },
+      "revId": "0705f6f0fa5db2b18215216a0a29c22e1bad4822",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
