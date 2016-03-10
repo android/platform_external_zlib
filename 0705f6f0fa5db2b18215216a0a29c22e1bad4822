@@ -94,6 +94,30 @@
       "revId": "0705f6f0fa5db2b18215216a0a29c22e1bad4822",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "570ce9bf_dc8fffa8",
+        "filename": "Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1079733
+      },
+      "writtenOn": "2016-03-10T18:46:32Z",
+      "side": 1,
+      "message": "ETC won\u0027t work because it\u0027s a HOST module.\nHere\u0027s another pending cl referencing this: https://android-review.googlesource.com/#/c/205757/4/Android.mk\nSHA1 of the git project is not ideal because the Android.mk file changes a lot and we don\u0027t care about it.",
+      "parentUuid": "570ce9bf_1c88f712",
+      "range": {
+        "startLine": 108,
+        "startChar": 22,
+        "endLine": 108,
+        "endChar": 25
+      },
+      "revId": "0705f6f0fa5db2b18215216a0a29c22e1bad4822",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
