@@ -275,7 +275,7 @@ typedef struct internal_state {
 /* Output a byte on the stream.
  * IN assertion: there is enough room in pending_buf.
  */
-#define put_byte(s, c) {s->pending_buf[s->pending++] = (c);}
+#define put_byte(s, c) {(s)->pending_buf[(s)->pending++] = (c);}
 
 
 #define MIN_LOOKAHEAD (MAX_MATCH+MIN_MATCH+1)
@@ -322,20 +322,20 @@ void ZLIB_INTERNAL _tr_stored_block OF((deflate_state *s, charf *buf,
 
 # define _tr_tally_lit(s, c, flush) \
   { uch cc = (c); \
-    s->d_buf[s->last_lit] = 0; \
-    s->l_buf[s->last_lit++] = cc; \
-    s->dyn_ltree[cc].Freq++; \
-    flush = (s->last_lit == s->lit_bufsize-1); \
+    (s)->d_buf[(s)->last_lit] = 0; \
+    (s)->l_buf[(s)->last_lit++] = cc; \
+    (s)->dyn_ltree[cc].Freq++; \
+    (flush) = ((s)->last_lit == (s)->lit_bufsize-1); \
    }
 # define _tr_tally_dist(s, distance, length, flush) \
   { uch len = (length); \
     ush dist = (distance); \
-    s->d_buf[s->last_lit] = dist; \
-    s->l_buf[s->last_lit++] = len; \
+    (s)->d_buf[(s)->last_lit] = dist; \
+    (s)->l_buf[(s)->last_lit++] = len; \
     dist--; \
-    s->dyn_ltree[_length_code[len]+LITERALS+1].Freq++; \
-    s->dyn_dtree[d_code(dist)].Freq++; \
-    flush = (s->last_lit == s->lit_bufsize-1); \
+    (s)->dyn_ltree[_length_code[len]+LITERALS+1].Freq++; \
+    (s)->dyn_dtree[d_code(dist)].Freq++; \
+    (flush) = ((s)->last_lit == (s)->lit_bufsize-1); \
   }
 #else
 # define _tr_tally_lit(s, c, flush) flush = _tr_tally(s, 0, c)
