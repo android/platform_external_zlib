@@ -197,7 +197,7 @@ const z_crc_t FAR * ZEXPORT get_crc_table()
 }
 
 /* ========================================================================= */
-#define DO1 crc = crc_table[0][((int)crc ^ (*buf++)) & 0xff] ^ (crc >> 8)
+#define DO1 (crc = crc_table[0][((int)crc ^ (*buf++)) & 0xff] ^ (crc >> 8))
 #define DO8 DO1; DO1; DO1; DO1; DO1; DO1; DO1; DO1
 
 /* ========================================================================= */
