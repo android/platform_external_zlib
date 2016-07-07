@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5d7fbe4c_07347a39",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2016-07-07T17:12:34Z",
+      "side": 1,
+      "message": "lol. this just won\u0027t die :-)",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 35
+      },
+      "revId": "e8dc8d6520e9069ded4e466e67b1ca52f984726c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
