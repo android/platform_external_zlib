@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5acfc472_430b441d",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2016-07-12T22:37:59Z",
+      "side": 1,
+      "message": "this can be removed",
+      "revId": "009b900832fd998265a6e33a8ac29786d35d5bd3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5acfc472_03013cff",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2016-07-12T22:37:59Z",
+      "side": 1,
+      "message": "this can be removed",
+      "revId": "009b900832fd998265a6e33a8ac29786d35d5bd3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
