@@ -77,5 +77,4 @@ cc_binary_host {
     name: "minigzip",
     srcs: ["src/test/minigzip.c"],
     static_libs: ["libz"],
-    stl: "none",
 }
