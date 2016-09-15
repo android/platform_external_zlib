@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb1db24e_aee3989b",
+        "filename": "libz.map.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2016-09-15T23:46:15Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 34,
+        "startChar": 25,
+        "endLine": 34,
+        "endChar": 28
+      },
+      "revId": "e405a26796a0d7ed68cb732c3c0b8b69ebd1d187",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
