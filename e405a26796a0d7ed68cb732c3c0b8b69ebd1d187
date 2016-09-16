@@ -22,6 +22,30 @@
       "revId": "e405a26796a0d7ed68cb732c3c0b8b69ebd1d187",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cb1db24e_848ddb37",
+        "filename": "libz.map.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2016-09-16T06:20:55Z",
+      "side": 1,
+      "message": "Marks a variable, not a function (OBJECT, not FUNC)",
+      "parentUuid": "cb1db24e_aee3989b",
+      "range": {
+        "startLine": 34,
+        "startChar": 25,
+        "endLine": 34,
+        "endChar": 28
+      },
+      "revId": "e405a26796a0d7ed68cb732c3c0b8b69ebd1d187",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
