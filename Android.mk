@@ -101,3 +101,6 @@ LOCAL_STATIC_LIBRARIES := libz
 LOCAL_CXX_STL := none
 
 include $(BUILD_HOST_EXECUTABLE)
+
+# Unset local variable
+zlib_files:=
