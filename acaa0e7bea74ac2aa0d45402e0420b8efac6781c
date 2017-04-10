@@ -22,6 +22,30 @@
       "revId": "acaa0e7bea74ac2aa0d45402e0420b8efac6781c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52a90d75_7f4db1d7",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2017-04-10T23:33:36Z",
+      "side": 1,
+      "message": "bizarrely, it looks like this binary is actually used on the host as part of the build: https://cs.corp.google.com/search/?q\u003dminigzip\u0026sq\u003dpackage:%5Eandroid$\n\n(the source file is part of the zlib distribution, so that would stay regardless.)",
+      "parentUuid": "87be4f5a_b76cc7eb",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 78,
+        "endChar": 1
+      },
+      "revId": "acaa0e7bea74ac2aa0d45402e0420b8efac6781c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
