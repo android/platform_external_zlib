@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "87be4f5a_b76cc7eb",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1019050
+      },
+      "writtenOn": "2017-04-10T19:54:19Z",
+      "side": 1,
+      "message": "Should this be removed? What about the src/test/minigzip.c file itself?",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 78,
+        "endChar": 1
+      },
+      "revId": "acaa0e7bea74ac2aa0d45402e0420b8efac6781c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
