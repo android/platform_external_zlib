@@ -1,5 +1,6 @@
 cc_defaults {
     name: "zlib_defaults",
+    vendor_available: true,
 
     cflags: [
         "-O3",
