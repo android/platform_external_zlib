@@ -5,6 +5,7 @@ cc_defaults {
         "-O3",
         "-DUSE_MMAP",
         "-DZLIB_CONST",
+        "-DUNALIGNED_OK",
     ],
     stl: "none",
     export_include_dirs: ["."],
