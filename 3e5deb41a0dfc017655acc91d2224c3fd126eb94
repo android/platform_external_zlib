@@ -1,0 +1,9 @@
+Verified+1: Chih-hung Hsieh <chh@google.com>
+Autosubmit+1: Chih-hung Hsieh <chh@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Elliott Hughes <enh@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Fri, 29 Sep 2017 22:50:39 +0000
+Reviewed-on: https://android-review.googlesource.com/498530
+Project: platform/external/zlib
+Branch: refs/heads/master
