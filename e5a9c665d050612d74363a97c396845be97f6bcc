@@ -1,0 +1,9 @@
+Code-Review+2: Narayan Kamath <narayan@google.com>
+Code-Review+2: Elliott Hughes <enh@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Przemyslaw Szczepaniak <pszczepaniak@google.com>
+Submitted-by: Przemyslaw Szczepaniak <pszczepaniak@google.com>
+Submitted-at: Mon, 22 Jan 2018 15:27:52 +0000
+Reviewed-on: https://android-review.googlesource.com/592493
+Project: platform/external/zlib
+Branch: refs/heads/master
