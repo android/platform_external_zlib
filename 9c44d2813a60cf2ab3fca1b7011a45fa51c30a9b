@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "be0ad0bf_a2e73a4c",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2018-05-24T02:27:20Z",
+      "side": 1,
+      "message": "remove the blank line... both of these lines are part of the workaround.",
+      "revId": "9c44d2813a60cf2ab3fca1b7011a45fa51c30a9b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
