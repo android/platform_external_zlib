@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f79d9c0_3d582b36",
+        "filename": "libz.map.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2018-07-13T19:59:32Z",
+      "side": 1,
+      "message": "annotated",
+      "range": {
+        "startLine": 1,
+        "startChar": 44,
+        "endLine": 1,
+        "endChar": 53
+      },
+      "revId": "e27f03bd4bb551b614ae194a8b434a9d90140213",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
