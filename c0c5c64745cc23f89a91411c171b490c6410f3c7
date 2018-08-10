@@ -16,6 +16,46 @@
       "revId": "c0c5c64745cc23f89a91411c171b490c6410f3c7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fca2a7b9_a6c2d618",
+        "filename": "libz.map.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1229339
+      },
+      "writtenOn": "2018-08-10T22:08:57Z",
+      "side": 1,
+      "message": "I had thought this change (\u0027*;\u0027 -\u003e \u0027_*;\u0027) would make ordinary libz.so symbols global by default instead of hidden/local, but actually this map file is only used to create NDK stubs, not to restrict visibility from the platform\u0027s libz.so, so it\u0027s fine. (The local: section doesn\u0027t do anything, but matching upstream is good.)",
+      "range": {
+        "startLine": 21,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 7
+      },
+      "revId": "c0c5c64745cc23f89a91411c171b490c6410f3c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3efd19ab_0f35be5c",
+        "filename": "libz.map.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1229339
+      },
+      "writtenOn": "2018-08-10T22:08:57Z",
+      "side": 1,
+      "message": "Typo?",
+      "revId": "c0c5c64745cc23f89a91411c171b490c6410f3c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
