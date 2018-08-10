@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "d450604f_72b9288a",
+        "filename": "libz.map.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2018-08-10T22:38:06Z",
+      "side": 1,
+      "message": "Hadn\u0027t actually caught this, good catch. You\u0027re right that this line won\u0027t do anything. The parser just ignores everything in `local` for generating NDK stubs.\n\nThis section does actually hide some APIs that used to be exposed though (everything in this list except gz_intmax, actually). Given that the tree builds like this and these are explicitly called out as being private APIs by this script, probably best to just let them be hidden.",
+      "parentUuid": "fca2a7b9_a6c2d618",
+      "range": {
+        "startLine": 21,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 7
+      },
+      "revId": "c0c5c64745cc23f89a91411c171b490c6410f3c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3efd19ab_0f35be5c",
         "filename": "libz.map.txt",
         "patchSetId": 4
@@ -56,6 +80,24 @@
       "revId": "c0c5c64745cc23f89a91411c171b490c6410f3c7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "392a0c10_cf3cfd5b",
+        "filename": "libz.map.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2018-08-10T22:38:06Z",
+      "side": 1,
+      "message": "Yes.",
+      "parentUuid": "3efd19ab_0f35be5c",
+      "revId": "c0c5c64745cc23f89a91411c171b490c6410f3c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
