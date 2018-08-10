@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "49383bd8_ef65854f",
+        "filename": "libz.map.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2018-08-10T17:59:25Z",
+      "side": 1,
+      "message": "Note that the versions changing here doesn\u0027t matter because the ndk_library module uses `unversioned_until: \"current\"`, so no versioning has ever been shipped here.",
+      "revId": "c0c5c64745cc23f89a91411c171b490c6410f3c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
