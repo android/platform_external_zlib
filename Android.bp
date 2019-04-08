@@ -61,14 +61,6 @@ cc_library {
     },
 }
 
-cc_binary_host {
-    name: "minigzip",
-    srcs: ["src/test/minigzip.c"],
-    cflags: ["-Wall", "-Werror"],
-    static_libs: ["libz"],
-    stl: "none",
-}
-
 cc_binary {
     name: "zlib_example",
     srcs: ["src/test/example.c"],
