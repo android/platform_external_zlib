@@ -1,4 +1,3 @@
-<<<<<<< HEAD   (6b6e20 [DOM Distiller] Compress resources to save 86 kB on Android.)
 /* zlib.h -- interface of the 'zlib' general purpose compression library
   version 1.2.11, January 15th, 2017
 
@@ -713,11 +712,12 @@ ZEXTERN int ZEXPORT deflateParams OF((z_streamp strm,
    used to switch between compression and straight copy of the input data, or
    to switch to a different kind of input data requiring a different strategy.
    If the compression approach (which is a function of the level) or the
-   strategy is changed, and if any input has been consumed in a previous
-   deflate() call, then the input available so far is compressed with the old
-   level and strategy using deflate(strm, Z_BLOCK).  There are three approaches
-   for the compression levels 0, 1..3, and 4..9 respectively.  The new level
-   and strategy will take effect at the next call of deflate().
+   strategy is changed, and if there have been any deflate() calls since the
+   state was initialized or reset, then the input available so far is
+   compressed with the old level and strategy using deflate(strm, Z_BLOCK).
+   There are three approaches for the compression levels 0, 1..3, and 4..9
+   respectively.  The new level and strategy will take effect at the next call
+   of deflate().
 
      If a deflate(strm, Z_BLOCK) is performed by deflateParams(), and it does
    not have enough output space to complete, then the parameter change will not
@@ -1825,11 +1825,6 @@ ZEXTERN int ZEXPORT gzgetc_ OF((gzFile file));  /* backward compatibility */
 #  undef z_gzgetc
 #  define z_gzgetc(g) \
           ((g)->have ? ((g)->have--, (g)->pos++, *((g)->next)++) : (gzgetc)(g))
-#elif defined(Z_CR_PREFIX_SET)
-#    undef gzgetc
-#    define gzgetc(g) \
-          ((g)->have ? ((g)->have--, (g)->pos++, *((g)->next)++) \
-                     : (Cr_z_gzgetc)(g))
 #else
 #  define gzgetc(g) \
           ((g)->have ? ((g)->have--, (g)->pos++, *((g)->next)++) : (gzgetc)(g))
@@ -1859,29 +1854,11 @@ ZEXTERN int ZEXPORT gzgetc_ OF((gzFile file));  /* backward compatibility */
 #    define z_adler32_combine z_adler32_combine64
 #    define z_crc32_combine z_crc32_combine64
 #  else
-#    ifdef gzopen
-#      undef gzopen
-#    endif
 #    define gzopen gzopen64
-#    ifdef gzseek
-#      undef gzseek
-#    endif
 #    define gzseek gzseek64
-#    ifdef gztell
-#      undef gztell
-#    endif
 #    define gztell gztell64
-#    ifdef gzoffset
-#      undef gzoffset
-#    endif
 #    define gzoffset gzoffset64
-#    ifdef adler32_combine
-#      undef adler32_combine
-#    endif
 #    define adler32_combine adler32_combine64
-#    ifdef crc32_combine
-#      undef crc32_combine
-#    endif
 #    define crc32_combine crc32_combine64
 #  endif
 #  ifndef Z_LARGE64
@@ -1934,6 +1911,3 @@ ZEXTERN int            ZEXPORTVA gzvprintf Z_ARG((gzFile file,
 #endif
 
 #endif /* ZLIB_H */
-=======
-src/zlib.h
->>>>>>> BRANCH (dfa064 Merge "libz supports native_bridge" am: 31b8169fea)
