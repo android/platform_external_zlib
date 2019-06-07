@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6f6198fd_a72c4a89",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 0,
+      "message": "I guess we no longer need this example? (Or it\u0027s been removed?) Fine with me to remove it, but maybe mention in the commit message?",
+      "range": {
+        "startLine": 75,
+        "startChar": 4,
+        "endLine": 75,
+        "endChar": 25
+      },
+      "revId": "33fed936b675fdb384cd0f64e4358e2d6a286838",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

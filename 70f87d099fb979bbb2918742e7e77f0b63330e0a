@@ -1,0 +1,188 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "79557c1b_b87c7264",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "Call out that we\u0027re removing update_zlib.sh because we\u0027re updating from a new repository?\n\nI could imagine that we might modify update_zlib.sh so that it does the right thing. But we probably want to add METADATA so it can be updated with external_updater? Is that even possible with the way Chromium\u0027s zlib is set up? I see a repo at https://chromium.googlesource.com/chromium/src/third_party/zlib/, though it looks like it\u0027s also part of the main Chromium repository: https://chromium.googlesource.com/chromium/src/+/refs/heads/master/third_party/zlib/. They do look to be in sync somehow. The zlib specific one doesn\u0027t have tags, so I guess we\u0027ll need to add that in order to use the external_updater?",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 24
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "473dc85a_736c604c",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "Be more specific? I suppose this is zlib_bench.cc?",
+      "range": {
+        "startLine": 51,
+        "startChar": 38,
+        "endLine": 51,
+        "endChar": 51
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ba26ec2b_cad7ea50",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "Mention that you\u0027re adding this in the commit message?",
+      "range": {
+        "startLine": 79,
+        "startChar": 4,
+        "endLine": 79,
+        "endChar": 23
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e7be9e15_1bc47bc6",
+        "filename": "NOTICE",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "I didn\u0027t realize we needed a NOTICE file. external/libjpeg-turbo\u0027s just says \"LICENSE.md\", and external/png doesn\u0027t have one. Is this some kind of symlink?\n\nAlso, it looks like there\u0027s already a NOTICE but no LICENSE in external/zlib? https://android.googlesource.com/platform/external/zlib/+/refs/heads/master. Ah, I think I need to better understand the merge that\u0027s occurring. \"Parent 1\" is Chromium\u0027s zlib, and \"Parent 2\" is the existing Android zlib from external/zlib? So you deleted Parent 2\u0027s NOTICE and added this one?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 7
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "79bd0e7f_d0e1de49",
+        "filename": "README.chromium",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "Should we also have a README.android, that describes how it\u0027s different from the Chromium one?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 19
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a06b1adc_2fdad036",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "Put this inside the #ifndef ANDROID block, since it goes with the include statement?",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 48
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "621bb898_c82e6a3c",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "nit: This file does more than rename things.",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 38
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "de7d5bbd_28fb4dc9",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T14:34:15Z",
+      "side": 1,
+      "message": "Maybe this should be more specific somehow? Chrome also builds zlib for Android.\n\nMaybe the comment here makes it clear enough.",
+      "range": {
+        "startLine": 13,
+        "startChar": 8,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
