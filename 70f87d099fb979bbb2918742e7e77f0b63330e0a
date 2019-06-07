@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "25799d4b_b804a9c6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "yeah, i\u0027ve already set up the upstream-master branch so that that should work. without tags, the tool will nag us every month or so if there are new changes upstream, so we don\u0027t _need_ tags, but if you do have a concept of \"this point in time is trusted/this point in time is not\" upstream, tags would be good :-)\n\ni was going to add METADATA later, but since you brought it up... done (with a SHA for now; we can always change that later).",
+      "parentUuid": "79557c1b_b87c7264",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 24
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "473dc85a_736c604c",
         "filename": "Android.bp",
         "patchSetId": 3
@@ -45,6 +69,30 @@
       "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc85737b_57230926",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "473dc85a_736c604c",
+      "range": {
+        "startLine": 51,
+        "startChar": 38,
+        "endLine": 51,
+        "endChar": 51
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "bcecfed3_124418ad",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba26ec2b_cad7ea50",
+      "range": {
+        "startLine": 79,
+        "startChar": 4,
+        "endLine": 79,
+        "endChar": 23
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e7be9e15_1bc47bc6",
         "filename": "NOTICE",
         "patchSetId": 3
@@ -82,6 +154,30 @@
       "writtenOn": "2019-06-07T14:34:15Z",
       "side": 1,
       "message": "I didn\u0027t realize we needed a NOTICE file. external/libjpeg-turbo\u0027s just says \"LICENSE.md\", and external/png doesn\u0027t have one. Is this some kind of symlink?\n\nAlso, it looks like there\u0027s already a NOTICE but no LICENSE in external/zlib? https://android.googlesource.com/platform/external/zlib/+/refs/heads/master. Ah, I think I need to better understand the merge that\u0027s occurring. \"Parent 1\" is Chromium\u0027s zlib, and \"Parent 2\" is the existing Android zlib from external/zlib? So you deleted Parent 2\u0027s NOTICE and added this one?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 7
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67925680_fd53a498",
+        "filename": "NOTICE",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "yeah, see go/android-3p. the whole thing\u0027s a mess. those instructions were copy \u0026 pasted from google3 which is why they care about LICENSE, but Android only cares about NOTICE. (that\u0027s why i added the suggestion on go/android-3p to just make sure you have the symlink.)\n\nyes, i removed *everything* from Android, then switched to chromium\u0027s zlib, then added back the stuff we actually need.\n\ni\u0027ll send you patches for external/libjpeg-turbo and external/png. (this might be something we should have hhb@\u0027s tool warn about...)",
+      "parentUuid": "e7be9e15_1bc47bc6",
       "range": {
         "startLine": 1,
         "startChar": 0,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "8a3ca55b_2668fed9",
+        "filename": "README.chromium",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "we\u0027re actively trying to remove that kind of thing :-)\n\nunless we\u0027ve actually forked, we should be upstreaming changes. there\u0027s been way too much \"accidental forking\" in external/. it would seem especially silly to do that when upstream is (now) _also_ Google!",
+      "parentUuid": "79bd0e7f_d0e1de49",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 19
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a06b1adc_2fdad036",
         "filename": "zconf.h",
         "patchSetId": 3
@@ -128,6 +248,30 @@
       "writtenOn": "2019-06-07T14:34:15Z",
       "side": 1,
       "message": "Put this inside the #ifndef ANDROID block, since it goes with the include statement?",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 48
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0ed5e59c_bf3253d5",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "i feel like the #ifndef needs an explanation, and it\u0027s harder to explain if it comes _after_ the explanation for the thing we\u0027re avoiding :-)\n\ni\u0027m also trying to avoid merge conflicts with upstream, so i didn\u0027t want to modify the upstream comment.",
+      "parentUuid": "a06b1adc_2fdad036",
       "range": {
         "startLine": 10,
         "startChar": 0,
@@ -183,6 +327,54 @@
       "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "19f8a9a3_6310ca32",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "that\u0027s why i said \"AOSP build\" rather than Android :-)\n\nsuggestions for a better name?\n\n-*-\n\nor are you saying \"this would be safer inside \"chromeconf.h\", just surrounding the actual renames\"? i kind of agree, but then i\u0027d be even more concerned that we didn\u0027t have this change upstream.\n\n(it\u0027s fine to do _something_ here now, then do something better upstream, and then revert whatever we\u0027ve done here when we next sync from upstream.)",
+      "parentUuid": "de7d5bbd_28fb4dc9",
+      "range": {
+        "startLine": 13,
+        "startChar": 8,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e50bfd40_80fc9857",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T14:59:05Z",
+      "side": 1,
+      "message": "i\u0027m referring to \"chomeconf.h\", not \"zconf.h\".",
+      "parentUuid": "621bb898_c82e6a3c",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 38
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
