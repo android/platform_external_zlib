@@ -22,6 +22,30 @@
       "revId": "9fdc1a19689262db07a048341eb70d840c959116",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6c930259_35a6786d",
+        "filename": "METADATA",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T16:04:36Z",
+      "side": 1,
+      "message": "no, it really was updated yesterday, not today :-)\n\n(i dislike this anyway --- i wish it was the date of the SHA, not the date at which we ran the tools. but the latter does make some sense in allowing a tool to make a \"i checked but nothing had changed upstream\" change to METADATA.)",
+      "parentUuid": "d8bdb787_79c32da4",
+      "range": {
+        "startLine": 11,
+        "startChar": 47,
+        "endLine": 11,
+        "endChar": 48
+      },
+      "revId": "9fdc1a19689262db07a048341eb70d840c959116",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

@@ -309,6 +309,30 @@
     },
     {
       "key": {
+        "uuid": "9e11610a_bb01e30f",
+        "filename": "README.chromium",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T16:04:36Z",
+      "side": 1,
+      "message": "no, sorry: that\u0027s the exception. a whole file that has no reason to exist upstream is actually more painful for both parties when it\u0027s upstream.\n\nsomething like the NOTICE symlink doesn\u0027t actually harm downstream, but since there\u0027s no use for it upstream and no likelihood of future merge conflicts, i don\u0027t think it helps either side.\n\nright now it\u0027s just this one #if that i\u0027m bothered about, but it looks like we\u0027re now painted into a corner where we have no choice anyway, *unless* you know of the opposite #define --- something that unambiguously signals \"i\u0027m building for chrome\"?",
+      "parentUuid": "ef947bb4_98d4eb99",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 19
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a06b1adc_2fdad036",
         "filename": "zconf.h",
         "patchSetId": 3
@@ -519,6 +543,30 @@
       "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e35d78f5_5ceca677",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T16:04:36Z",
+      "side": 1,
+      "message": "ugh. why would they do that?!\n\ncode *targeting* Android is supposed to use __ANDROID__, which is set *for* you by the NDK. ANDROID is supposed to be the no, really, i\u0027m part of the OS.\n\nbecause this is transitively included from the public header file that *calling* code #includes, not just the implementation, i\u0027m stuck now. (__ANDROID__ isn\u0027t right in this case, because we also build host tools which are ANDROID but aren\u0027t targeting __ANDROID__.)\n\ni\u0027ll probably have to go back to `#if 0` which then definitely doesn\u0027t get upstreamed :-(\n\n(unless you think you can move chromium away from `ANDROID`, but you don\u0027t actually work on chromium, right, just this single project in their tree?)",
+      "parentUuid": "e5abdf00_67543125",
+      "range": {
+        "startLine": 13,
+        "startChar": 8,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
