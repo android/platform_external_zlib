@@ -591,6 +591,30 @@
       "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f54e107f_8d6b7e22",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-07T18:08:40Z",
+      "side": 1,
+      "message": "\u003e Is that the problem?\n\nexactly. and normally __ANDROID__ would be fine, but (a) that wouldn\u0027t be upstreamable because that\u0027s set for Chrome too, and (b) we build host tools with this zlib, so it\u0027s not inclusive enough for Android :-(\n\ni think we can live with this for now, and if it becomes a problem we can try harder...\n\n(might be good to let a chrome person know, though? because a way to recognize a chrome build would work for this too, and maybe that exists?)",
+      "parentUuid": "5fcd227d_e2471aa7",
+      "range": {
+        "startLine": 13,
+        "startChar": 8,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
