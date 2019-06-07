@@ -567,6 +567,30 @@
       "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5fcd227d_e2471aa7",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T17:20:06Z",
+      "side": 1,
+      "message": "\u003e ugh. why would they do that?!\n\u003e \n\u003e code *targeting* Android is supposed to use __ANDROID__, which is set *for* you by the NDK. ANDROID is supposed to be the no, really, i\u0027m part of the OS.\n\u003e \n\u003e because this is transitively included from the public header file that *calling* code #includes, not just the implementation, i\u0027m stuck now. (__ANDROID__ isn\u0027t right in this case, because we also build host tools which are ANDROID but aren\u0027t targeting __ANDROID__.)\n\u003e \n\u003e i\u0027ll probably have to go back to `#if 0` which then definitely doesn\u0027t get upstreamed :-(\n\nAh - can you help me make sure I understand? I had been thinking you could make up your own define, which is defined by Android.bp and prevents us from including chromeconf.h. But that wouldn\u0027t work because then any library that depends on zlib and includes zlib.h would need to also define it. Is that the problem?\n\n\u003e \n\u003e (unless you think you can move chromium away from `ANDROID`, but you don\u0027t actually work on chromium, right, just this single project in their tree?)\n\nI primarily work on Skia, but I do work on image decoding in Chromium as well. I don\u0027t know whether it would be hard to convince anyone, but there are a decent number of references to ANDROID in their tree, and they\u0027d all have to be changed.",
+      "parentUuid": "e35d78f5_5ceca677",
+      "range": {
+        "startLine": 13,
+        "startChar": 8,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
