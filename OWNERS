@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (6b6e20 [DOM Distiller] Compress resources to save 86 kB on Android.)
 agl@chromium.org
 cavalcantii@chromium.org
 cblume@chromium.org
@@ -5,3 +6,6 @@ mtklein@chromium.org
 scroggo@chromium.org
 
 # COMPONENT: Internals
+=======
+include platform/system/core:/janitors/OWNERS
+>>>>>>> BRANCH (dfa064 Merge "libz supports native_bridge" am: 31b8169fea)
