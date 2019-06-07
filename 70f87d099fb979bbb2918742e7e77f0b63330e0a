@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "dd18ff42_d452e277",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T15:49:53Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "25799d4b_b804a9c6",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 24
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "473dc85a_736c604c",
         "filename": "Android.bp",
         "patchSetId": 3
@@ -190,6 +214,30 @@
     },
     {
       "key": {
+        "uuid": "ca0e26da_04a8b09e",
+        "filename": "NOTICE",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T15:49:53Z",
+      "side": 1,
+      "message": "Thanks for the confirmation and docs. And I just found the existing LICENSE file, which was already in the Chromium repo.",
+      "parentUuid": "67925680_fd53a498",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 7
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "79bd0e7f_d0e1de49",
         "filename": "README.chromium",
         "patchSetId": 3
@@ -237,6 +285,30 @@
     },
     {
       "key": {
+        "uuid": "ef947bb4_98d4eb99",
+        "filename": "README.chromium",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T15:49:53Z",
+      "side": 1,
+      "message": "So do you think we should add Android.bp etc to Chromium\u0027s repo?",
+      "parentUuid": "8a3ca55b_2668fed9",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 19
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a06b1adc_2fdad036",
         "filename": "zconf.h",
         "patchSetId": 3
@@ -281,6 +353,30 @@
       "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57671d8d_52ce7b81",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T15:49:53Z",
+      "side": 1,
+      "message": "Ah. I actually look at this in a different (perhaps odd) way - the comment only applies to code that is ifdef\u0027d out, so the comment should be ifdef\u0027d out, too. Either way is fine with me.",
+      "parentUuid": "0ed5e59c_bf3253d5",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 48
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -366,6 +462,54 @@
       "side": 1,
       "message": "i\u0027m referring to \"chomeconf.h\", not \"zconf.h\".",
       "parentUuid": "621bb898_c82e6a3c",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 38
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5abdf00_67543125",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T15:49:53Z",
+      "side": 1,
+      "message": "\u003e that\u0027s why i said \"AOSP build\" rather than Android :-)\n\nI\u0027m afraid the macro itself is going to collide with other definitions. See https://cs.chromium.org/chromium/src/components/safe_browsing/db/safebrowsing.proto?type\u003dcs\u0026q\u003dsafebrows\u0026sq\u003dpackage:chromium\u0026g\u003d0\u0026l\u003d311 and https://cs.chromium.org/chromium/src/build/config/android/BUILD.gn?type\u003dcs\u0026q\u003dbuild/config/android/BUILD.gn\u0026sq\u003dpackage:chromium\u0026g\u003d0\u0026l\u003d21\n\n\u003e \n\u003e suggestions for a better name?\n\nMaybe AOSP? Or ANDROID_FRAMEWORK? (Skia uses SK_BUILD_FOR_ANDROID_FRAMEWORK for things that we only build when building as a part of building the Android system.)\n\n\u003e \n\u003e -*-\n\u003e \n\u003e or are you saying \"this would be safer inside \"chromeconf.h\", just surrounding the actual renames\"? i kind of agree, but then i\u0027d be even more concerned that we didn\u0027t have this change upstream.\n\nNo, I agree that that would be a messier change. I\u0027m not convinced they made the right decision when they combined the export macros with renaming, but maybe I\u0027m just not familiar enough with the export macros to see why the belong in the same place.\n\n\u003e \n\u003e (it\u0027s fine to do _something_ here now, then do something better upstream, and then revert whatever we\u0027ve done here when we next sync from upstream.)\n\nAgreed.",
+      "parentUuid": "19f8a9a3_6310ca32",
+      "range": {
+        "startLine": 13,
+        "startChar": 8,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "70f87d099fb979bbb2918742e7e77f0b63330e0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4b7ebc1_76dfb970",
+        "filename": "zconf.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T15:49:53Z",
+      "side": 1,
+      "message": "I know - it \"[a]lso sets up export macros in component builds.\"",
+      "parentUuid": "e50bfd40_80fc9857",
       "range": {
         "startLine": 13,
         "startChar": 19,

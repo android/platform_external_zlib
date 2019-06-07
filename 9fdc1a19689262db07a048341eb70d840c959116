@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d8bdb787_79c32da4",
+        "filename": "METADATA",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-07T15:49:53Z",
+      "side": 1,
+      "message": "nit: 7",
+      "range": {
+        "startLine": 11,
+        "startChar": 47,
+        "endLine": 11,
+        "endChar": 48
+      },
+      "revId": "9fdc1a19689262db07a048341eb70d840c959116",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
