@@ -16,6 +16,24 @@
       "revId": "e7091dd0b78998ae9184b2df10336eef41b5e663",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b5edcd16_d84c0e8b",
+        "filename": "Android.bp",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-06-10T15:46:08Z",
+      "side": 1,
+      "message": "they\u0027re discouraged in new .bp files. which this strictly _isn\u0027t_, but ... :-)",
+      "parentUuid": "b11c103c_ee747477",
+      "revId": "e7091dd0b78998ae9184b2df10336eef41b5e663",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
