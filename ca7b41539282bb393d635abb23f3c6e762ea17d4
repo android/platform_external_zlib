@@ -22,6 +22,30 @@
       "revId": "ca7b41539282bb393d635abb23f3c6e762ea17d4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40bd8452_242f1a60",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1074628
+      },
+      "writtenOn": "2019-06-14T20:18:29Z",
+      "side": 1,
+      "message": "We generally haven\u0027t been using _static / _shared names like in make, since we\u0027ve got cc_library that can do both.",
+      "parentUuid": "f03ecab2_1e565db6",
+      "range": {
+        "startLine": 72,
+        "startChar": 11,
+        "endLine": 72,
+        "endChar": 23
+      },
+      "revId": "ca7b41539282bb393d635abb23f3c6e762ea17d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
