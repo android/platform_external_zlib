@@ -1,6 +1,26 @@
 cc_defaults {
     name: "libz_defaults",
 
+    host_supported: true,
+    unique_host_soname: true,
+    static_ndk_lib: true,
+    vendor_available: true,
+    vndk: {
+        enabled: true,
+        support_system_process: true,
+    },
+    recovery_available: true,
+    native_bridge_supported: true,
+
+    target: {
+        linux_bionic: {
+            enabled: true,
+        },
+        windows: {
+            enabled: true,
+        },
+    },
+
     cflags: [
         "-O3",
         "-DHAVE_HIDDEN",
@@ -50,27 +70,12 @@ cc_defaults {
 cc_library {
     name: "libz",
     defaults: ["libz_defaults"],
+}
 
-    host_supported: true,
-    unique_host_soname: true,
-    static_ndk_lib: true,
-
-    vendor_available: true,
-    vndk: {
-        enabled: true,
-        support_system_process: true,
-    },
-    recovery_available: true,
-    native_bridge_supported: true,
-
-    target: {
-        linux_bionic: {
-            enabled: true,
-        },
-        windows: {
-            enabled: true,
-        },
-    },
+cc_library {
+    name: "libz_ndk",
+    defaults: ["libz_defaults"],
+    sdk_version: "current",
 }
 
 cc_library_static {
