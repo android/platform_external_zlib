@@ -16,6 +16,24 @@
       "revId": "28d04a9248b3b4c4d8aac05e8d0d786c8f7d67c9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7c4b60fa_6bb682e7",
+        "filename": "zconf.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1307957
+      },
+      "writtenOn": "2019-07-10T21:29:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "76a95b1d_07b9378c",
+      "revId": "28d04a9248b3b4c4d8aac05e8d0d786c8f7d67c9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
