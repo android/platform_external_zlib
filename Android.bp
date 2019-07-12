@@ -1,3 +1,31 @@
+arm_cflags = [
+    // We claim to be Linux rather than Android so we use getauxval() directly
+    // instead of the NDK android_getCpuFeatures.
+    "-DARMV8_OS_LINUX",
+    "-DADLER32_SIMD_NEON",
+    "-DINFLATE_CHUNK_SIMD_NEON",
+]
+arm_srcs = [
+    "arm_features.c",
+    "simd_stub.c",
+]
+
+x86_cflags = [
+    "-DADLER32_SIMD_SSSE3",
+    "-DCRC32_SIMD_SSE42_PCLMUL",
+    "-DINFLATE_CHUNK_SIMD_SSE2",
+    // TODO: the build system defaults don't match our official ABI.
+    "-mssse3",
+    // This code won't actually be run unless CPUID reports that the processor
+    // really does have the instruction.
+    "-mpclmul",
+]
+x86_srcs = [
+    "crc_folding.c",
+    "fill_window_sse.c",
+    "x86.c",
+]
+
 cc_defaults {
     name: "libz_defaults",
 
@@ -14,22 +42,23 @@ cc_defaults {
     export_include_dirs: ["."],
     srcs: [
         "adler32.c",
+        "adler32_simd.c",
         "compress.c",
+        "contrib/optimizations/inffast_chunk.c",
+        "contrib/optimizations/inflate.c",
         "crc32.c",
+        "crc32_simd.c",
         "deflate.c",
         "gzclose.c",
         "gzlib.c",
         "gzread.c",
         "gzwrite.c",
         "infback.c",
-        "inflate.c",
         "inftrees.c",
         "inffast.c",
         "trees.c",
         "uncompr.c",
         "zutil.c",
-
-        "simd_stub.c",
     ],
 
     arch: {
@@ -43,6 +72,22 @@ cc_defaults {
             // is fixed.
             pack_relocations: false,
             ldflags: ["-Wl,--hash-style=both"],
+
+            cflags: arm_cflags,
+            srcs: arm_srcs,
+        },
+        arm64: {
+            cflags: arm_cflags +
+                    ["-DCRC32_ARMV8_CRC32", "-DINFLATE_CHUNK_READ_64LE"],
+            srcs: arm_srcs,
+        },
+        x86: {
+            cflags: x86_cflags,
+            srcs: x86_srcs,
+        },
+        x86_64: {
+            cflags: x86_cflags + ["-DINFLATE_CHUNK_READ_64LE"],
+            srcs: x86_srcs,
         },
     },
 }
@@ -73,6 +118,8 @@ cc_library {
     },
 }
 
+// libz_current allows modules building against the NDK to have access to zlib
+// API that's not available from the NDK libz.
 cc_library_static {
     name: "libz_current",
     defaults: ["libz_defaults"],
