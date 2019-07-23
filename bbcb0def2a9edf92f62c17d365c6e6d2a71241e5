@@ -22,6 +22,30 @@
       "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5683554d_3e8c3e53",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-23T19:00:52Z",
+      "side": 1,
+      "message": "i\u0027m in pure codemonkey mode here, just imitating what the chromium build script does and assuming they knew what they were doing :-)\n\n+cavalcantii who might have something more useful to add? (and who\u0027s probably a good person to give this CL a quick look for sanity anyway!)",
+      "parentUuid": "1532cab5_8a757f41",
+      "range": {
+        "startLine": 81,
+        "startChar": 21,
+        "endLine": 81,
+        "endChar": 71
+      },
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
