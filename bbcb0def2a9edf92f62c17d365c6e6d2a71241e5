@@ -2,6 +2,91 @@
   "comments": [
     {
       "key": {
+        "uuid": "feb38992_e47c0422",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2019-07-24T00:20:55Z",
+      "side": 1,
+      "message": "Thanks for adding the comment, it was the first thing I noticed that was a bit odd.\n\nI assume it is fine to rely on getauxval() as older versions of Android may not have getauxval() (i.e. false negative) *but* they won\u0027t be shipping the latest version of Android\u0027s zlib.",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f350b9d1_d775e58e",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2019-07-24T00:20:55Z",
+      "side": 1,
+      "message": "You may *not* enable this by default for intel, in my tests it actually slowed down the speed for inflate_fast.\n\nPlease check:\nhttps://bugs.chromium.org/p/chromium/issues/detail?id\u003d772870#c39\n\nThat was way back in March 2018, maybe the compiler is now smarter and will do the right thing.\n\nSo before enabling -O3 for inflate_fast, it is worthwhile to double check if it is actually helping on Intel. On ARM I can say with confidence that it will help.",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5222258c_2e5b7b09",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2019-07-24T00:20:55Z",
+      "side": 1,
+      "message": "I recommend to add a comment and explain why we have to include *both* vanilla inffast plus inffast_chunk.\n\nFor the rationale:\nhttps://chromium-review.googlesource.com/749732",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8b650745_4f7ede9e",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2019-07-24T00:20:55Z",
+      "side": 1,
+      "message": "This is probably outdated after enabling the SIMD code?",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d871f5c_ffd1b6fb",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2019-07-24T00:20:55Z",
+      "side": 1,
+      "message": "Where I could find instructions to build zlib_bench + the library so I can:\na) Double check the performance gains.\nb) Inspect the generated code (ASM).",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1532cab5_8a757f41",
         "filename": "Android.bp",
         "patchSetId": 1
@@ -37,6 +122,30 @@
       "side": 1,
       "message": "i\u0027m in pure codemonkey mode here, just imitating what the chromium build script does and assuming they knew what they were doing :-)\n\n+cavalcantii who might have something more useful to add? (and who\u0027s probably a good person to give this CL a quick look for sanity anyway!)",
       "parentUuid": "1532cab5_8a757f41",
+      "range": {
+        "startLine": 81,
+        "startChar": 21,
+        "endLine": 81,
+        "endChar": 71
+      },
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5e0c7f8e_97597529",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2019-07-24T00:20:55Z",
+      "side": 1,
+      "message": "The first flag (CRC32) will enable the fast hash calculation using crypto extensions. It will work both in 32bit (it will use 2x \u0027crc32w\u0027) as also in 64bit (it will use a \u0027crc32d\u0027).\n\nMy recommendation is to enable CRC32 for 32bit too, as that will help gzip decompression speed in average 30% (a bit more with lower entropy input data).\n\nThe second flag is for enabling wider reads while decompressing, it will only help in 64bit. In theory this could be optimized for 32bit too (i.e. using vld1.64), for further details check: https://chromium-review.googlesource.com/c/1447042\n\nConcerning trade-offs: there are no trade-offs, they work really well *together* in 64bit.\n:-)",
+      "parentUuid": "5683554d_3e8c3e53",
       "range": {
         "startLine": 81,
         "startChar": 21,
