@@ -155,6 +155,30 @@
       "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef848d56_ff0e4592",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2019-07-24T00:51:51Z",
+      "side": 1,
+      "message": "Another reason to enable CRC32 on 32bit: it *also* helps compression, as it is used as a hash function while performing compression.\n\nIt will improve compression speed between 10% (ZLIB_DEFAULT_COMPRESSION) to 50% (level 3) depending on:\na) big core X little core.\nb) entropy level of input data.\n\nFor details: https://chromium-review.googlesource.com/1173262\n\nA question: is there the expectation that compressed content must have the same checksum when the task is performed on Intel x ARM?",
+      "parentUuid": "5e0c7f8e_97597529",
+      "range": {
+        "startLine": 81,
+        "startChar": 21,
+        "endLine": 81,
+        "endChar": 71
+      },
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
