@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "a6ece47a_650eeeac",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1071150
+      },
+      "writtenOn": "2019-07-24T10:17:55Z",
+      "side": 1,
+      "message": "Also partner interest in this issue in:\n\nBug: https://issuetracker.google.com/135889247\nBug: b/132944147.",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "feb38992_e47c0422",
         "filename": "Android.bp",
         "patchSetId": 1
