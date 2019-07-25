@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7f09c901_63f6a430",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a6ece47a_650eeeac",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "feb38992_e47c0422",
         "filename": "Android.bp",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2019-07-24T00:20:55Z",
       "side": 1,
       "message": "Thanks for adding the comment, it was the first thing I noticed that was a bit odd.\n\nI assume it is fine to rely on getauxval() as older versions of Android may not have getauxval() (i.e. false negative) *but* they won\u0027t be shipping the latest version of Android\u0027s zlib.",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "997f177d_d1cac0d4",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "elaborated the comment.",
+      "parentUuid": "feb38992_e47c0422",
       "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "c648ded1_7bbd0ebb",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "it\u0027s a bit of a wash on my p920, but i may as well follow the BUILD file more closely. done.",
+      "parentUuid": "f350b9d1_d775e58e",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5222258c_2e5b7b09",
         "filename": "Android.bp",
         "patchSetId": 1
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "f7b13654_ceac545d",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "doesn\u0027t seem worth duplicating the rationale, but i\u0027ve added a link to the CL.",
+      "parentUuid": "5222258c_2e5b7b09",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8b650745_4f7ede9e",
         "filename": "Android.bp",
         "patchSetId": 1
@@ -81,6 +153,24 @@
       "writtenOn": "2019-07-24T00:20:55Z",
       "side": 1,
       "message": "This is probably outdated after enabling the SIMD code?",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "71eccb1e_86608346",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "i was going to look into this in a later CL, but since you ask...\n\nit\u0027s a bit of a wash. some are faster, some are slower, but they\u0027re all in the same ballpark. since my rule of thumb here is \"do what chrome does\", i\u0027ll drop this.",
+      "parentUuid": "8b650745_4f7ede9e",
       "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
@@ -115,6 +205,42 @@
       "writtenOn": "2019-07-24T02:07:39Z",
       "side": 1,
       "message": "I guess you can also remove the TODO.",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7baae93d_2131cea9",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0f680630_8e754556",
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e1272071_9a47a2fb",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "https://source.android.com/setup/build/downloading\n\nhttps://source.android.com/setup/build/building\n\nit\u0027s a pain in the ass if you\u0027re not already set up, so i can just send you the .so files if you\u0027re interested.",
+      "parentUuid": "7d871f5c_ffd1b6fb",
       "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
@@ -204,6 +330,30 @@
       "side": 1,
       "message": "Another reason to enable CRC32 on 32bit: it *also* helps compression, as it is used as a hash function while performing compression.\n\nIt will improve compression speed between 10% (ZLIB_DEFAULT_COMPRESSION) to 50% (level 3) depending on:\na) big core X little core.\nb) entropy level of input data.\n\nFor details: https://chromium-review.googlesource.com/1173262\n\nA question: is there the expectation that compressed content must have the same checksum when the task is performed on Intel x ARM?",
       "parentUuid": "5e0c7f8e_97597529",
+      "range": {
+        "startLine": 81,
+        "startChar": 21,
+        "endLine": 81,
+        "endChar": 71
+      },
+      "revId": "bbcb0def2a9edf92f62c17d365c6e6d2a71241e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c7a2c6f_b808466e",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2019-07-25T20:53:10Z",
+      "side": 1,
+      "message": "moved the v8 crc32 to the shared arm flags.\n\n\u003e A question: is there the expectation that compressed content must have the same checksum when the task is performed on Intel x ARM?\n\ndoes this mean that a different decompressor might think that there\u0027s a bad checksum? that sounds likely to cause problems.",
+      "parentUuid": "ef848d56_ff0e4592",
       "range": {
         "startLine": 81,
         "startChar": 21,
