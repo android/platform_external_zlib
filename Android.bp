@@ -83,7 +83,13 @@ cc_library_static {
 cc_binary_host {
     name: "minigzip",
     srcs: ["contrib/minigzip/minigzip.c"],
-    cflags: ["-Wall", "-Werror", "-DUSE_MMAP"],
+    cflags: [
+        // Upstream chromium renames all the functions; we don't want that.
+        "-DCHROMIUM_ZLIB_NO_CHROMECONF",
+        "-DUSE_MMAP",
+        "-Wall",
+        "-Werror",
+    ],
     static_libs: ["libz"],
     stl: "none",
 }
@@ -91,7 +97,12 @@ cc_binary_host {
 cc_binary {
     name: "zlib_bench",
     srcs: ["contrib/bench/zlib_bench.cc"],
-    cflags: ["-Wall", "-Werror"],
+    cflags: [
+        // Upstream chromium renames all the functions; we don't want that.
+        "-DCHROMIUM_ZLIB_NO_CHROMECONF",
+        "-Wall",
+        "-Werror",
+    ],
     host_supported: true,
     shared_libs: ["libz"],
 }
