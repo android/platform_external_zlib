@@ -34,6 +34,24 @@
       "revId": "774c42020da2e4e0291627d02a9615713ca3e51e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "717b4670_3f280326",
+        "filename": "chromeconf.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1307957
+      },
+      "writtenOn": "2019-08-15T05:40:23Z",
+      "side": 1,
+      "message": "The change here (define -\u003e undef) is from upstream.",
+      "parentUuid": "aa3f16c0_7bbe43cc",
+      "revId": "774c42020da2e4e0291627d02a9615713ca3e51e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
