@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Elliott Hughes <enh@google.com>
+Code-Review+1: Adenilson Cavalcanti <cavalcantii@chromium.org>
+Submitted-by: Tao Bao <tbao@google.com>
+Submitted-at: Tue, 24 Sep 2019 17:15:32 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/zlib/+/1126346
+Project: platform/external/zlib
+Branch: refs/heads/master
