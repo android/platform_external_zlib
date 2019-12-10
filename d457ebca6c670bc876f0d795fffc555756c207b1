@@ -46,6 +46,30 @@
       "revId": "d457ebca6c670bc876f0d795fffc555756c207b1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2afed0a8_5c256b33",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1307957
+      },
+      "writtenOn": "2019-12-10T21:43:49Z",
+      "side": 1,
+      "message": "But still does Gerrit know it?",
+      "parentUuid": "788ab8eb_fb80d33d",
+      "range": {
+        "startLine": 7,
+        "startChar": 10,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "d457ebca6c670bc876f0d795fffc555756c207b1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
