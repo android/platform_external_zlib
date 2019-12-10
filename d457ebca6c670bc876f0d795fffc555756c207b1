@@ -22,6 +22,30 @@
       "revId": "d457ebca6c670bc876f0d795fffc555756c207b1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "788ab8eb_fb80d33d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1307957
+      },
+      "writtenOn": "2019-12-10T21:42:33Z",
+      "side": 1,
+      "message": "Sorry searched \"OWNER.android\" instead...",
+      "parentUuid": "262aeed0_550982c9",
+      "range": {
+        "startLine": 7,
+        "startChar": 10,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "d457ebca6c670bc876f0d795fffc555756c207b1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
