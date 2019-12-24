@@ -71,6 +71,10 @@ cc_library {
             enabled: true,
         },
     },
+    stubs: {
+        symbol_file: "libz.map.txt",
+        versions: ["10000"],
+    },
 }
 
 cc_library_static {
