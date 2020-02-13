@@ -4,6 +4,20 @@
     {
       "name": "recovery_host_test",
       "host": true
+    },
+    {
+      "name": "recovery_unit_test"
+    },
+    {
+      "name": "ziparchive-tests"
+    },
+    {
+      "name": "CtsLibcoreTestCases",
+      "options": [
+        {
+          "include-filter": "org.apache.harmony.tests.java.util.zip"
+        }
+      ]
     }
   ]
 }
