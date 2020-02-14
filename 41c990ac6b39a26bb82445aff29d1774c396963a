@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+2: Tianjie Xu <xunchang@google.com>
+Submitted-by: Elliott Hughes <enh@google.com>
+Submitted-at: Fri, 14 Feb 2020 01:08:59 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/zlib/+/1235496
+Project: platform/external/zlib
+Branch: refs/heads/master
