@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f0cc3342_b77ecb99",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1103203
+      },
+      "writtenOn": "2020-03-13T20:27:19Z",
+      "side": 1,
+      "message": "\"the other\" is not very clear, can you provide more context? At least something like:\n\nEnable remaining Deflater optimizations that previously broke tests.\n\nEnabling these is now safe because [explanation]\n\n?\n\nIs there a bug number associated with this?",
+      "range": {
+        "startLine": 7,
+        "startChar": 7,
+        "endLine": 7,
+        "endChar": 16
+      },
+      "revId": "0cf9d1ce2a83cd4470c58038f70683e6daea07e7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
