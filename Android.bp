@@ -1,9 +1,8 @@
 srcs_opt = [
     "adler32_simd.c",
     // See https://chromium-review.googlesource.com/749732.
-// TODO: causes `atest org.apache.harmony.tests.java.util.zip.DeflaterTest` failures.
-//    "contrib/optimizations/inffast_chunk.c",
-//    "contrib/optimizations/inflate.c",
+    "contrib/optimizations/inffast_chunk.c",
+    "contrib/optimizations/inflate.c",
     // This file doesn't build for non-neon, so it can't be in the main srcs.
     "cpu_features.c",
     "crc32_simd.c",
@@ -21,8 +20,7 @@ cflags_arm = [
 cflags_arm_neon = [
     // We no longer support non-Neon platform builds, but the NDK just has one libz.
     "-DADLER32_SIMD_NEON",
-// TODO: causes `atest org.apache.harmony.tests.java.util.zip.DeflaterTest` failures.
-//    "-DINFLATE_CHUNK_SIMD_NEON",
+    "-DINFLATE_CHUNK_SIMD_NEON",
     // HWCAP_CRC32 is checked at runtime, so it's okay to turn crc32
     // acceleration on for both 32- and 64-bit.
     "-DCRC32_ARMV8_CRC32",
@@ -34,8 +32,7 @@ cflags_x86 = [
     "-DX86_NOT_WINDOWS",
     // Android's x86/x86-64 ABI includes SSE2 and SSSE3.
     "-DADLER32_SIMD_SSSE3",
-// TODO: see arm above.
-//    "-DINFLATE_CHUNK_SIMD_SSE2",
+    "-DINFLATE_CHUNK_SIMD_SSE2",
     // TODO: ...but the host build system defaults don't match our official ABI.
     "-mssse3",
     // PCLMUL isn't in the ABI, but it won't actually be used unless CPUID
@@ -77,7 +74,6 @@ cc_defaults {
         "gzwrite.c",
         "infback.c",
         "inffast.c",
-        "inflate.c",
         "inftrees.c",
         "trees.c",
         "uncompr.c",
