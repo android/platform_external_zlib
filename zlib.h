@@ -652,9 +652,11 @@ ZEXTERN int ZEXPORT deflateSetDictionary OF((z_streamp strm,
    not perform any compression: this will be done by deflate().
 */
 
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN int ZEXPORT deflateGetDictionary OF((z_streamp strm,
                                              Bytef *dictionary,
                                              uInt  *dictLength));
+#endif
 /*
      Returns the sliding dictionary being maintained by deflate.  dictLength is
    set to the number of bytes in the dictionary, and that many bytes are copied
@@ -904,9 +906,11 @@ ZEXTERN int ZEXPORT inflateSetDictionary OF((z_streamp strm,
    inflate().
 */
 
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 18
 ZEXTERN int ZEXPORT inflateGetDictionary OF((z_streamp strm,
                                              Bytef *dictionary,
                                              uInt  *dictLength));
+#endif
 /*
      Returns the sliding dictionary being maintained by inflate.  dictLength is
    set to the number of bytes in the dictionary, and that many bytes are copied
@@ -1280,8 +1284,10 @@ ZEXTERN int ZEXPORT uncompress OF((Bytef *dest,   uLongf *destLen,
    buffer with the uncompressed data up to that point.
 */
 
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN int ZEXPORT uncompress2 OF((Bytef *dest,   uLongf *destLen,
                                     const Bytef *source, uLong *sourceLen));
+#endif
 /*
      Same as uncompress, except that sourceLen is a pointer, where the
    length of the source is *sourceLen.  On return, *sourceLen is the number of
@@ -1417,8 +1423,10 @@ ZEXTERN int ZEXPORT gzread OF((gzFile file, voidp buf, unsigned len));
    Z_STREAM_ERROR.
 */
 
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN z_size_t ZEXPORT gzfread OF((voidp buf, z_size_t size, z_size_t nitems,
                                      gzFile file));
+#endif
 /*
      Read up to nitems items of size size from file to buf, otherwise operating
    as gzread() does.  This duplicates the interface of stdio's fread(), with
@@ -1451,8 +1459,10 @@ ZEXTERN int ZEXPORT gzwrite OF((gzFile file,
    error.
 */
 
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN z_size_t ZEXPORT gzfwrite OF((voidpc buf, z_size_t size,
                                       z_size_t nitems, gzFile file));
+#endif
 /*
      gzfwrite() writes nitems items of size size from buf to file, duplicating
    the interface of stdio's fwrite(), with size_t request and return types.  If
@@ -1704,8 +1714,10 @@ ZEXTERN uLong ZEXPORT adler32 OF((uLong adler, const Bytef *buf, uInt len));
      if (adler != original_adler) error();
 */
 
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN uLong ZEXPORT adler32_z OF((uLong adler, const Bytef *buf,
                                     z_size_t len));
+#endif
 /*
      Same as adler32(), but with a size_t length.
 */
@@ -1739,8 +1751,10 @@ ZEXTERN uLong ZEXPORT crc32   OF((uLong crc, const Bytef *buf, uInt len));
      if (crc != original_crc) error();
 */
 
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN uLong ZEXPORT crc32_z OF((uLong adler, const Bytef *buf,
                                   z_size_t len));
+#endif
 /*
      Same as crc32(), but with a size_t length.
 */
@@ -1912,8 +1926,12 @@ ZEXTERN const char   * ZEXPORT zError           OF((int));
 ZEXTERN int            ZEXPORT inflateSyncPoint OF((z_streamp));
 ZEXTERN const z_crc_t FAR * ZEXPORT get_crc_table    OF((void));
 ZEXTERN int            ZEXPORT inflateUndermine OF((z_streamp, int));
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN int            ZEXPORT inflateValidate OF((z_streamp, int));
+#endif
+#if !defined(__ANDROID__) || __ANDROID_API__ >= 28
 ZEXTERN unsigned long  ZEXPORT inflateCodesUsed OF ((z_streamp));
+#endif
 ZEXTERN int            ZEXPORT inflateResetKeep OF((z_streamp));
 ZEXTERN int            ZEXPORT deflateResetKeep OF((z_streamp));
 #if (defined(_WIN32) || defined(__CYGWIN__)) && !defined(Z_SOLO)
@@ -1922,9 +1940,11 @@ ZEXTERN gzFile         ZEXPORT gzopen_w OF((const wchar_t *path,
 #endif
 #if defined(STDC) || defined(Z_HAVE_STDARG_H)
 #  ifndef Z_SOLO
+#    if !defined(__ANDROID__) || __ANDROID_API__ >= 18
 ZEXTERN int            ZEXPORTVA gzvprintf Z_ARG((gzFile file,
                                                   const char *format,
                                                   va_list va));
+#    endif
 #  endif
 #endif
 
