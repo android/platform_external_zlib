@@ -16,6 +16,24 @@
       "revId": "38307941bef4176cbc6f728132780b82b59ff4cd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e47c5c4_4a69a33d",
+        "filename": "zlib.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-05-01T20:29:26Z",
+      "side": 1,
+      "message": "that\u0027s then another header we need to include in the NDK. which isn\u0027t *terrible*, but did seem like a negative.\n\ni\u0027m assuming it\u0027s unlikely that anything else will be added between the version #defines and the big \"what is zlib anyway?\" doc comment below. and right next to the regular #defines did seem like the best place if we _weren\u0027t_ worried about conflicts.",
+      "parentUuid": "16634dc2_aa6346e7",
+      "revId": "38307941bef4176cbc6f728132780b82b59ff4cd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
