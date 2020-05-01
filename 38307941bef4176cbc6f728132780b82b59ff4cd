@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16634dc2_aa6346e7",
+        "filename": "zlib.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2020-05-01T20:24:20Z",
+      "side": 1,
+      "message": "I wonder if it would make sense to put this block in a header (i.e. zlib_android_conf.h).\n\nMain advantage would be easier sync with upcoming releases of zlib.",
+      "revId": "38307941bef4176cbc6f728132780b82b59ff4cd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
