@@ -16,6 +16,24 @@
       "revId": "3ff64adb78abe07aafcd5b4d760c824f74fa531b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52ef1062_ce18bf55",
+        "filename": "contrib/tests/utils_unittest.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2020-05-14T18:57:46Z",
+      "side": 1,
+      "message": "Yes, that is right!\n\nAfter the recent patches I\u0027ve landed, we have 96% of decompression code coverage (i.e. lines) and around 61% for compression (https://analysis.chromium.org/p/chromium/coverage/dir?host\u003dchromium.googlesource.com\u0026project\u003dchromium/src\u0026ref\u003drefs/heads/master\u0026revision\u003dc0d9d594106de411244a0fd742da6a26df40298a\u0026path\u003d//third_party/zlib/contrib/optimizations/\u0026platform\u003dlinux).\n\nI hope to improve that compression number as soon I manage to enable a last test (i.e. cover_trees).\n\nConcerning the headers: if AOSP has gtest available somewhere, maybe we could simply add a conditional for the correct paths for the headers?\n\nSomething like:\n\n#ifdef AOSP_BUILD_NO_CHROMIUM\n// proper paths to the headers needed\n#else\n// current code\n#endif",
+      "parentUuid": "00bfc609_58f510f1",
+      "revId": "3ff64adb78abe07aafcd5b4d760c824f74fa531b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
