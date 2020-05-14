@@ -34,6 +34,24 @@
       "revId": "3ff64adb78abe07aafcd5b4d760c824f74fa531b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0dbe09be_94c7dba2",
+        "filename": "contrib/tests/utils_unittest.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-05-14T20:20:12Z",
+      "side": 1,
+      "message": "yeah, we have gtest it\u0027s just in external/google-test instead. just having `#include \u003cgtest/gtest.h\u003e` would work for us because we put third-party header directories on the include path for the libraries in use.",
+      "parentUuid": "52ef1062_ce18bf55",
+      "revId": "3ff64adb78abe07aafcd5b4d760c824f74fa531b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
