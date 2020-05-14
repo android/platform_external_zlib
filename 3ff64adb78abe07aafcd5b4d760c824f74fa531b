@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "00bfc609_58f510f1",
+        "filename": "contrib/tests/utils_unittest.cc",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-05-14T16:16:08Z",
+      "side": 1,
+      "message": "tests with full coverage? nice! we\u0027ll have to look at building these for Android.\n\nshame about the google3-style #includes though. we\u0027ll have to come up with a workaround for that...\n\n+cavalcantii",
+      "revId": "3ff64adb78abe07aafcd5b4d760c824f74fa531b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
