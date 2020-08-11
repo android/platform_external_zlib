@@ -1,0 +1,8 @@
+Code-Review+2: Elliott Hughes <enh@google.com>
+Autosubmit+1: Elliott Hughes <enh@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 11 Aug 2020 17:19:59 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/zlib/+/1395790
+Project: platform/external/zlib
+Branch: refs/heads/master
