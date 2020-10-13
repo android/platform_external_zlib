@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b0767b5_4730ef3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-10-13T18:01:06Z",
+      "side": 1,
+      "message": "+chrome zlib folks for the third_party issue\n\n+kalder for libfuzzer_options",
+      "revId": "f4f989bf4d2f891db8be261da9f295b71e3598f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
