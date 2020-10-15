@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5990de37_8ce57909",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-10-15T22:27:14Z",
+      "side": 1,
+      "message": "yeah, no hurry --- i plan on waiting for you. (if i do get a bigger chunk of spare time -- and i hope to soon -- that will be spent on switching libjpeg-turbo over to the chromium upstream.)\n\ni just uploaded this as a handy reference for which files need the fix :-)",
+      "parentUuid": "a2dfe773_2b40c522",
+      "revId": "f4f989bf4d2f891db8be261da9f295b71e3598f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f10ce0c7_3d9f2fe1",
         "filename": "Android.bp",
         "patchSetId": 1
