@@ -18,6 +18,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2dfe773_2b40c522",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2020-10-15T22:23:42Z",
+      "side": 1,
+      "message": "It is a pretty cool idea to have the fuzzing tests running on AOSP.\n:-)\n\nI think similarly to the utests, there is the need to use relative header file paths, like we did before (https://chromium-review.googlesource.com/c/chromium/src/+/2210904).\n\nIf you are not in a hurry, I can try to address this issue (relative headers) like we did before on  upstream (i.e. Chromium\u0027s zlib) and get back to you next week.\n\nI would prefer to avoid patching AOSP\u0027s checkout to help keeping a unified zlib shared by everyone.\n\nOn the other hand, if you are in hurry, please feel free to submit a patch to upstream and I would gladly review it.\n",
+      "revId": "f4f989bf4d2f891db8be261da9f295b71e3598f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f10ce0c7_3d9f2fe1",
