@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2e42074_24d140a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2020-10-21T01:09:40Z",
+      "side": 1,
+      "message": "LGTM from a zlib perspective.\n\nTo clarify, this change would be fine after having (https://android-review.googlesource.com/c/platform/libcore/+/1262459) landed?\n\nAn observation: it would be really nice to add in the CL msg a comment about the expected performance gain (i.e. \u0027Enabling this feature yielded XX percent performance improvement for decompression...\u0027).\n\nIIRC, the gains should be around +30% depending on the running target (i.e. 32bit x 64bit, ARM vs x86) and data input entropy.\n",
+      "revId": "98041aaa3c3b61aca0a065f68947b025d4d04686",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
