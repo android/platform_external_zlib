@@ -16,6 +16,24 @@
       "message": "LGTM from a zlib perspective.\n\nTo clarify, this change would be fine after having (https://android-review.googlesource.com/c/platform/libcore/+/1262459) landed?\n\nAn observation: it would be really nice to add in the CL msg a comment about the expected performance gain (i.e. \u0027Enabling this feature yielded XX percent performance improvement for decompression...\u0027).\n\nIIRC, the gains should be around +30% depending on the running target (i.e. 32bit x 64bit, ARM vs x86) and data input entropy.\n",
       "revId": "98041aaa3c3b61aca0a065f68947b025d4d04686",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a85fbf7_7d8565c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-10-22T23:32:09Z",
+      "side": 1,
+      "message": "well, any performance change is moot since this isn\u0027t going to be submitted because it breaks a test :-)\n\nspecifically:\n\nlibcore.java.util.zip.DeflaterTest#testDeflate\n\njunit.framework.AssertionFailedError: expected:\u003c0\u003e but was:\u003c85\u003e\n\tat junit.framework.Assert.fail(Assert.java:50)\n\tat junit.framework.Assert.failNotEquals(Assert.java:287)\n\tat junit.framework.Assert.assertEquals(Assert.java:67)\n\tat junit.framework.Assert.assertEquals(Assert.java:199)\n\tat junit.framework.Assert.assertEquals(Assert.java:205)\n\tat libcore.java.util.zip.DeflaterTest.testDeflate(DeflaterTest.java:56)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat junit.framework.TestCase.runTest(TestCase.java:168)\n\tat junit.framework.TestCase.runBare(TestCase.java:134)\n\tat libcore.junit.junit3.TestCaseWithRules.superRunBare(TestCaseWithRules.java:110)\n\tat libcore.junit.junit3.TestCaseWithRules.access$000(TestCaseWithRules.java:44)\n\tat libcore.junit.junit3.TestCaseWithRules$1.evaluate(TestCaseWithRules.java:66)\n\tat libcore.dalvik.system.CloseGuardSupport$FailTestWhenResourcesNotClosedRule$1.evaluate(CloseGuardSupport.java:113)\n\tat libcore.junit.junit3.TestCaseWithRules.runBare(TestCaseWithRules.java:106)\n\tat junit.framework.TestResult$1.protect(TestResult.java:115)\n\tat androidx.test.internal.runner.junit3.AndroidTestResult.runProtected(AndroidTestResult.java:73)\n\tat junit.framework.TestResult.run(TestResult.java:118)\n\tat androidx.test.internal.runner.junit3.AndroidTestResult.run(AndroidTestResult.java:51)\n\tat junit.framework.TestCase.run(TestCase.java:124)\n\tat androidx.test.internal.runner.junit3.NonLeakyTestSuite$NonLeakyTest.run(NonLeakyTestSuite.java:62)\n\tat androidx.test.internal.runner.junit3.AndroidTestSuite$2.run(AndroidTestSuite.java:101)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)\n\tat java.lang.Thread.run(Thread.java:920)\n\nlibcore/luni/src/test/java/libcore/java/util/zip/DeflaterTest.java:\n\n    public void testDeflate() throws DataFormatException {\n        deflater.setInput(new byte[] { 1, 2, 3 });\n        deflateInflate(Deflater.NO_FLUSH);\n        assertTrue(totalInflated \u003c 3);\n56:     assertEquals(0, decompressed[2]); // the 3rd byte shouldn\u0027t have been flushed yet\n\ni think this is the same test failure we saw last time we looked at this, and iirc you were going to look at whether this passes with OpenJDK with a similarly-configured zlib?",
+      "parentUuid": "e2e42074_24d140a5",
+      "revId": "98041aaa3c3b61aca0a065f68947b025d4d04686",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
