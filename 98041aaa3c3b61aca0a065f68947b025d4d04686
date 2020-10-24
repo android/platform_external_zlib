@@ -34,6 +34,24 @@
       "parentUuid": "e2e42074_24d140a5",
       "revId": "98041aaa3c3b61aca0a065f68947b025d4d04686",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e79574ee_e75e774a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2020-10-24T20:21:39Z",
+      "side": 1,
+      "message": "Now I remember.\n\nAgreed, no way to enable any new optimization feature until all tests are clear.",
+      "parentUuid": "8a85fbf7_7d8565c4",
+      "revId": "98041aaa3c3b61aca0a065f68947b025d4d04686",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
