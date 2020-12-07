@@ -5,7 +5,6 @@ srcs_opt = [
 //    "contrib/optimizations/inffast_chunk.c",
 //    "contrib/optimizations/inflate.c",
     // This file doesn't build for non-neon, so it can't be in the main srcs.
-    "cpu_features.c",
     "crc32_simd.c",
 ]
 
@@ -69,6 +68,7 @@ cc_defaults {
     srcs: [
         "adler32.c",
         "compress.c",
+        "cpu_features.c",
         "crc32.c",
         "deflate.c",
         "gzclose.c",
