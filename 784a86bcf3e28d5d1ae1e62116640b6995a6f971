@@ -1,0 +1,8 @@
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Dan Albert <danalbert@google.com>
+Submitted-by: Elliott Hughes <enh@google.com>
+Submitted-at: Wed, 09 Dec 2020 18:06:15 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/zlib/+/1519998
+Project: platform/external/zlib
+Branch: refs/heads/master
