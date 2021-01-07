@@ -1,0 +1,8 @@
+Code-Review+2: Ryan Mitchell <rtmitchell@google.com>
+Presubmit-Verified+2: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Submitted-by: Elliott Hughes <enh@google.com>
+Submitted-at: Thu, 07 Jan 2021 21:33:32 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/zlib/+/1541130
+Project: platform/external/zlib
+Branch: refs/heads/master
