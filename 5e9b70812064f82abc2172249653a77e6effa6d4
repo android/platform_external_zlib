@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "27ca7729_4fd27217",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1710792
+      },
+      "writtenOn": "2021-01-12T22:46:49Z",
+      "side": 1,
+      "message": "The intent is not to strip away optimization, but to ensure that libz behaves consistently across different platforms(required for imgdiff to work correctly). We were quite surprised that recent SSE3 optimization changes behavior, but other optimizations didn\u0027t seem to cause problems. I don\u0027t think \"unoptimized\" expresses our intent here.",
+      "parentUuid": "2bb1b326_3d47eebd",
+      "range": {
+        "startLine": 69,
+        "startChar": 16,
+        "endLine": 69,
+        "endChar": 22
+      },
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8b550161_50650564",
         "filename": "Android.bp",
         "patchSetId": 1
@@ -37,6 +61,24 @@
       "writtenOn": "2021-01-12T20:06:20Z",
       "side": 1,
       "message": "note that you\u0027re still getting some of the optimizations here.\n\nare we sure that sharing defaults like this is a good idea? would it be better to just copy \u0026 paste the few things we genuinely want instead? (that way someone\u0027s going to have to go out of their way to change your variant, whereas if there\u0027s inheritance the opposite is true --- changes will affect you by default.)",
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06899fcb_a8dcaeee",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1710792
+      },
+      "writtenOn": "2021-01-12T22:46:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8b550161_50650564",
       "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
@@ -64,6 +106,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "999b89e6_6363ec30",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1710792
+      },
+      "writtenOn": "2021-01-12T22:46:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "38271f54_1aaeb614",
+      "range": {
+        "startLine": 181,
+        "startChar": 43,
+        "endLine": 181,
+        "endChar": 52
+      },
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f484174f_7613cd23",
@@ -77,6 +143,30 @@
       "writtenOn": "2021-01-12T20:06:20Z",
       "side": 1,
       "message": "i wouldn\u0027t expect you\u0027d need any of these?\n\n(i\u0027m a bit surprised by the two ramdisks too?)",
+      "range": {
+        "startLine": 191,
+        "startChar": 0,
+        "endLine": 208,
+        "endChar": 6
+      },
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2373bae_4bb37901",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1710792
+      },
+      "writtenOn": "2021-01-12T22:46:49Z",
+      "side": 1,
+      "message": "Done. Much of this is blindly copied from old libz. I tried removing vendor_available but that fails to compile.",
+      "parentUuid": "f484174f_7613cd23",
       "range": {
         "startLine": 191,
         "startChar": 0,
