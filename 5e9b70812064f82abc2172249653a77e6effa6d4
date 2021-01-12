@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2bb1b326_3d47eebd",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T20:06:20Z",
+      "side": 1,
+      "message": "s/stable/unoptimized/ throughout? that might (a) make it more obvious what the purpose of this is but more importantly (b) make it less likely that someone adds an optimization to this variant.",
+      "range": {
+        "startLine": 69,
+        "startChar": 16,
+        "endLine": 69,
+        "endChar": 22
+      },
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b550161_50650564",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T20:06:20Z",
+      "side": 1,
+      "message": "note that you\u0027re still getting some of the optimizations here.\n\nare we sure that sharing defaults like this is a good idea? would it be better to just copy \u0026 paste the few things we genuinely want instead? (that way someone\u0027s going to have to go out of their way to change your variant, whereas if there\u0027s inheritance the opposite is true --- changes will affect you by default.)",
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "38271f54_1aaeb614",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T20:06:20Z",
+      "side": 1,
+      "message": "primarily\n\n(but actually *only* used by imgdiff --- we should add the visibility: here to make sure that others don\u0027t use this by mistake.)",
+      "range": {
+        "startLine": 181,
+        "startChar": 43,
+        "endLine": 181,
+        "endChar": 52
+      },
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f484174f_7613cd23",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T20:06:20Z",
+      "side": 1,
+      "message": "i wouldn\u0027t expect you\u0027d need any of these?\n\n(i\u0027m a bit surprised by the two ramdisks too?)",
+      "range": {
+        "startLine": 191,
+        "startChar": 0,
+        "endLine": 208,
+        "endChar": 6
+      },
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
