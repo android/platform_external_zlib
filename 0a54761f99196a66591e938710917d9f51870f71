@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45af24e7_5c975b47",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T21:49:43Z",
+      "side": 1,
+      "message": "still \"only\" :-)\n\n(i think you can just remove this now there\u0027s the visibility:)",
+      "range": {
+        "startLine": 178,
+        "startChar": 43,
+        "endLine": 178,
+        "endChar": 52
+      },
+      "revId": "0a54761f99196a66591e938710917d9f51870f71",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "214eb97f_2202f7f4",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T21:49:43Z",
+      "side": 1,
+      "message": "(since there\u0027s only one user of these cc_defaults, i\u0027d just inline them directly into the cc_library and not bother with a cc_defaults...)",
+      "revId": "0a54761f99196a66591e938710917d9f51870f71",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8274b89a_936373b1",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T21:49:43Z",
+      "side": 1,
+      "message": "you definitely don\u0027t want this --- this is only needed for the NDK libz for app compat with old 32-bit apps.",
+      "range": {
+        "startLine": 201,
+        "startChar": 14,
+        "endLine": 206,
+        "endChar": 0
+      },
+      "revId": "0a54761f99196a66591e938710917d9f51870f71",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76d11e4f_c1e0b5db",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-12T21:49:43Z",
+      "side": 1,
+      "message": "i don\u0027t think you want this either, right? isn\u0027t the aim that you\u0027re *always* running the portable code? so you never want any arm/arm64/x86/x86-64-specific code?",
+      "range": {
+        "startLine": 207,
+        "startChar": 12,
+        "endLine": 224,
+        "endChar": 10
+      },
+      "revId": "0a54761f99196a66591e938710917d9f51870f71",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
