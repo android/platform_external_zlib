@@ -66,7 +66,7 @@ srcs_x86 = [
 cflags_64 = ["-DINFLATE_CHUNK_READ_64LE"]
 
 cc_defaults {
-    name: "libz_defaults",
+    name: "libz_stable_defaults",
 
     cflags: [
         // We do support hidden visibility, so turn that on.
@@ -125,6 +125,11 @@ cc_defaults {
             srcs: srcs_x86,
         },
     },
+}
+
+cc_defaults {
+    name: "libz_defaults",
+    defaults: ["libz_stable_defaults"],
     target: {
         android_x86: {
             cflags: cflags_android_x86,
@@ -149,6 +154,37 @@ cc_library {
         enabled: true,
         support_system_process: true,
     },
+    ramdisk_available: true,
+    vendor_ramdisk_available: true,
+    recovery_available: true,
+    native_bridge_supported: true,
+
+    target: {
+        linux_bionic: {
+            enabled: true,
+        },
+        windows: {
+            enabled: true,
+        },
+    },
+
+    stubs: {
+        versions: [
+            "29",
+            "30",
+        ],
+        symbol_file: "libz.map.txt",
+    },
+}
+
+// A more stable build of libz. Build configuration of this library should be 
+// the same for different targets. This is primaryly used by imgdiff.
+cc_library {
+    name: "libz_stable",
+    defaults: ["libz_stable_defaults"],
+
+    host_supported: true,
+    vendor_available: true,
     ramdisk_available: true,
     vendor_ramdisk_available: true,
     recovery_available: true,
