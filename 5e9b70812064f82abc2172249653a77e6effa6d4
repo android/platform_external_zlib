@@ -48,6 +48,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d09ebcbb_7814c3ae",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-01-13T00:29:47Z",
+      "side": 1,
+      "message": "yeah, i just meant that \"any optimization carries a risk of causing a difference between ABIs or between host/device\".\n\nnow we\u0027re copy \u0026 pasting rather than inheriting, i think it\u0027ll be fine anyway.",
+      "parentUuid": "27ca7729_4fd27217",
+      "range": {
+        "startLine": 69,
+        "startChar": 16,
+        "endLine": 69,
+        "endChar": 22
+      },
+      "revId": "5e9b70812064f82abc2172249653a77e6effa6d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8b550161_50650564",
