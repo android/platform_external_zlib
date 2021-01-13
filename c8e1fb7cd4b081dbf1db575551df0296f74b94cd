@@ -22,6 +22,30 @@
       },
       "revId": "c8e1fb7cd4b081dbf1db575551df0296f74b94cd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98f4ffd4_9d4e88fe",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 1710792
+      },
+      "writtenOn": "2021-01-13T00:46:00Z",
+      "side": 1,
+      "message": "Removing vendor_available will cause compilation failure, as libapplypatch is vendor_available. ramdisk_available can be removed.",
+      "parentUuid": "11ef7a4d_49d0060d",
+      "range": {
+        "startLine": 201,
+        "startChar": 4,
+        "endLine": 202,
+        "endChar": 28
+      },
+      "revId": "c8e1fb7cd4b081dbf1db575551df0296f74b94cd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
