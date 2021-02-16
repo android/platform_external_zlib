@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05b1dede_f28b994b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-02-16T20:12:35Z",
+      "side": 1,
+      "message": "+scroggo for OWNERS. (gerrit doesn\u0027t understand OWNERS.android yet.)",
+      "revId": "3f2566ff7b42d975693ce1fcf3bbf3700ef01e19",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
