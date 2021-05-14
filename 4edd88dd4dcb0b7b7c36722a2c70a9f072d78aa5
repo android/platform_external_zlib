@@ -33,6 +33,24 @@
       "message": "gah, need scroggo for OWNERS...",
       "revId": "4edd88dd4dcb0b7b7c36722a2c70a9f072d78aa5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "644ee0a5_1ba3ea3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1851014
+      },
+      "writtenOn": "2021-05-14T20:46:34Z",
+      "side": 1,
+      "message": "Hi there, Elliott!\n\nI hope you are doing fine, it is being a while.\n:-)\n\nSorry for the delay to answer, this week thanks to BlinkOn my schedule was a bit off.\n\nA bit of history: initially we only had compiler optimized flags enabled for the SIMD code, as an attempt to enable it globally caused a regression in an ARM bot (IIRC way back in 2017) that featured a really old board.\n\nBut since then, compilers got better at generating code for aarch64 and I noticed that we could have better code generation and inlining of some code without regressions for little cores.\n\nThe size increase was justifiable (+2.9KB in a ~70KB library) when compared to the performance gains (i.e. average gain of +3.7% to +11% depending on the device).\n\nFor full data (4 tested devices): https://docs.google.com/spreadsheets/d/15q28VV0WRnsYDFjpJrr7y8bQgikgfhaj8GAmi-zet2E/edit#gid\u003d941756136\n\nSo I enabled it in May 2020, probably why it didn\u0027t make the cut into AOSP.\n\nYou can read more about the subject here:\nhttps://bugs.chromium.org/p/chromium/issues/detail?id\u003d1084371#c9\n\nIt should be safe to enable this for the whole zlib, but it may be a good idea to double check binary size increase and performance improvements.",
+      "parentUuid": "4e149b65_31d425f0",
+      "revId": "4edd88dd4dcb0b7b7c36722a2c70a9f072d78aa5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
