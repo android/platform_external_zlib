@@ -68,6 +68,24 @@
       "message": "LGTM, but I\u0027m not a committer in AOSP.\n",
       "revId": "4edd88dd4dcb0b7b7c36722a2c70a9f072d78aa5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cd7365b_63badb6a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1872087
+      },
+      "writtenOn": "2021-05-14T21:32:37Z",
+      "side": 1,
+      "message": "Thank you for your response Elliott. :)",
+      "parentUuid": "6a959de8_e16484ce",
+      "revId": "4edd88dd4dcb0b7b7c36722a2c70a9f072d78aa5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
