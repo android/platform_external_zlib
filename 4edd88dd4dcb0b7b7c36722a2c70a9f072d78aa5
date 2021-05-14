@@ -51,6 +51,23 @@
       "parentUuid": "4e149b65_31d425f0",
       "revId": "4edd88dd4dcb0b7b7c36722a2c70a9f072d78aa5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a0d5867_2eff79e7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1512829
+      },
+      "writtenOn": "2021-05-14T20:47:23Z",
+      "side": 1,
+      "message": "LGTM, but I\u0027m not a committer in AOSP.\n",
+      "revId": "4edd88dd4dcb0b7b7c36722a2c70a9f072d78aa5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
